@@ -2117,19 +2117,6 @@ function setLang(lang) {
 }
 
 // Chat
-const GROQ_URL = 'https://api.groq.com/openai/v1/chat/completions';
-const response = await fetch("/api/chat", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-    message: userMessage,
-    sector: currentSector
-  }),
-});
-
-const data = await response.json();
 
 const botReply =
   data.choices?.[0]?.message?.content ||
@@ -2517,36 +2504,33 @@ async function sendChat() {
   document.getElementById('sendBtn').disabled = true;
   showTyping();
 
-  const ctx = sectorContexts[currentSector];
-  chatHistory.push({ role: 'user', content: msg });
-
   try {
-    const res = await fetch(GROQ_URL, {
+    // Call YOUR VPS API (IP: 194.36.85.71 on port 3000)
+    const response = await fetch('http://194.36.85.71:3000/api/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer ' + GROQ_KEY
       },
       body: JSON.stringify({
-        model: 'llama-3.3-70b-versatile',
-        max_tokens: 500,
-        temperature: 0.7,
-        messages: [
-          { role: 'system', content: ctx.system },
-          ...chatHistory.slice(-6)
-        ]
+        message: msg,
+        sector: currentSector
       })
     });
 
-    const data = await res.json();
+    const data = await response.json();
     removeTyping();
-    const reply = data.choices?.[0]?.message?.content || "I'm sorry, I couldn't process that. Please try again.";
-    chatHistory.push({ role: 'assistant', content: reply });
-    addMsg(reply, 'bot');
-  } catch (e) {
+    
+    if (data.reply) {
+      addMsg(data.reply, 'bot');
+    } else if (data.error) {
+      addMsg('Error: ' + data.error, 'bot');
+    } else {
+      addMsg('Sorry, I could not process that request.', 'bot');
+    }
+  } catch (error) {
     removeTyping();
-    chatHistory.pop();
-    addMsg("I am having trouble connecting right now. Please try again in a moment.", 'bot');
+    console.error('Chat error:', error);
+    addMsg('Connection error. Make sure the API server is running on your VPS.', 'bot');
   }
 
   isSending = false;
