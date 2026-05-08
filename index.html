@@ -1,0 +1,2572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Management Solutions SMS — AI Automation Consultant | Qatar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function(){ emailjs.init({ publicKey: "gOqD55uqx17eSnuVK" }); })();
+</script>
+<style>
+  :root {
+    --gold: #C9A84C;
+    --gold-light: #e8c96a;
+    --dark: #0a0c10;
+    --dark2: #111418;
+    --dark3: #181d24;
+    --dark4: #1e2530;
+    --text: #e8e0cc;
+    --text-muted: #7a8494;
+    --text-dim: #3d4553;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--dark);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 18px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(10,12,16,0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(201,168,76,0.12);
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: var(--gold);
+    letter-spacing: 0.5px;
+  }
+
+  .nav-links { display: flex; align-items: center; gap: 32px; }
+
+  .nav-links a {
+    font-size: 13px;
+    color: var(--text-muted);
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--gold); }
+
+  .lang-toggle {
+    display: flex;
+    gap: 2px;
+    background: var(--dark3);
+    border: 1px solid var(--dim-text);
+    border-radius: 20px;
+    padding: 3px;
+  }
+
+  .lang-btn {
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 11px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: var(--text-muted);
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.2s;
+  }
+
+  .lang-btn.active {
+    background: var(--gold);
+    color: #1a1200;
+    font-weight: 500;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 40px 80px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -200px; left: 50%;
+    transform: translateX(-50%);
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(201,168,76,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(201,168,76,0.08);
+    border: 1px solid rgba(201,168,76,0.25);
+    color: var(--gold);
+    font-size: 12px;
+    padding: 7px 18px;
+    border-radius: 20px;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .hero-badge::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--gold);
+    border-radius: 50%;
+    animation: blink 2s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 6vw, 80px);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    max-width: 900px;
+  }
+
+  .hero h1 .accent { color: var(--gold); }
+
+  .hero p {
+    font-size: 18px;
+    color: var(--text-muted);
+    max-width: 580px;
+    line-height: 1.7;
+    margin-bottom: 48px;
+    font-weight: 300;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn-primary {
+    padding: 14px 32px;
+    background: var(--gold);
+    color: #1a1200;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.2s;
+    letter-spacing: 0.3px;
+    font-family: 'DM Sans', sans-serif;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+  .btn-secondary {
+    padding: 14px 32px;
+    background: transparent;
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 6px;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: all 0.2s;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+  }
+
+  .btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+
+  .hero-stats {
+    display: flex;
+    gap: 60px;
+    margin-top: 72px;
+    padding-top: 48px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .hero-stat .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: var(--gold);
+    display: block;
+  }
+
+  .hero-stat .label {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 4px;
+    letter-spacing: 0.5px;
+  }
+
+  /* ── SECTION COMMON ── */
+  section { padding: 100px 40px; max-width: 1100px; margin: 0 auto; }
+
+  .section-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .section-sub {
+    font-size: 16px;
+    color: var(--text-muted);
+    max-width: 560px;
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* ── SECTORS ── */
+  .sectors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2px;
+    margin-top: 60px;
+    border: 1px solid var(--text-dim);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .sector-card {
+    background: var(--dark2);
+    padding: 32px 28px;
+    transition: background 0.3s;
+    cursor: default;
+    border-right: 1px solid var(--text-dim);
+    border-bottom: 1px solid var(--text-dim);
+  }
+
+  .sector-card:hover { background: var(--dark3); }
+
+  .sector-icon {
+    font-size: 28px;
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  .sector-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+
+  .sector-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .sector-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .service-tag {
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: rgba(201,168,76,0.08);
+    color: var(--gold);
+    border: 1px solid rgba(201,168,76,0.2);
+  }
+
+  /* ── HOW IT WORKS ── */
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2px;
+    margin-top: 60px;
+    border: 1px solid var(--text-dim);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .step {
+    background: var(--dark2);
+    padding: 36px 28px;
+    border-right: 1px solid var(--text-dim);
+    position: relative;
+  }
+
+  .step-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: rgba(201,168,76,0.15);
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .step h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--text);
+  }
+
+  .step p {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* ── PRICING ── */
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    margin-top: 60px;
+  }
+
+  .price-card {
+    background: var(--dark2);
+    border: 1px solid var(--text-dim);
+    border-radius: 12px;
+    padding: 36px 28px;
+    transition: border-color 0.3s;
+  }
+
+  .price-card:hover { border-color: rgba(201,168,76,0.3); }
+
+  .price-card.featured {
+    border-color: rgba(201,168,76,0.4);
+    background: #181300;
+    position: relative;
+  }
+
+  .price-card.featured::before {
+    content: 'Most Popular';
+    position: absolute;
+    top: -12px; left: 50%;
+    transform: translateX(-50%);
+    background: var(--gold);
+    color: #1a1200;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 16px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  .price-label { font-size: 13px; color: var(--text-muted); margin-bottom: 8px; }
+
+  .price-amount {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .price-unit { font-size: 13px; color: var(--text-muted); margin-bottom: 24px; }
+
+  .price-features { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+
+  .price-features li {
+    font-size: 13px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .price-features li::before {
+    content: '✓';
+    color: var(--gold);
+    font-weight: 500;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* ── CHATBOT SECTION ── */
+  .chatbot-section {
+    max-width: 100%;
+    padding: 100px 0;
+    background: var(--dark2);
+    border-top: 1px solid rgba(201,168,76,0.1);
+    border-bottom: 1px solid rgba(201,168,76,0.1);
+  }
+
+  .chatbot-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .chatbot-info .section-sub { max-width: 100%; }
+
+  .chatbot-features {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 36px;
+  }
+
+  .chat-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .chat-feature-icon {
+    width: 36px; height: 36px;
+    background: rgba(201,168,76,0.1);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  .chat-feature-text h4 { font-size: 14px; font-weight: 500; margin-bottom: 3px; }
+  .chat-feature-text p { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
+
+  /* Chat widget */
+  .chat-widget {
+    background: var(--dark);
+    border: 1px solid rgba(201,168,76,0.25);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.4);
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chat-header {
+    background: #1a1400;
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .chat-avatar {
+    width: 38px; height: 38px;
+    background: var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  .chat-header-text h3 { font-size: 14px; font-weight: 500; color: var(--text); }
+  .chat-header-text p { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+
+  .online-dot {
+    width: 7px; height: 7px;
+    background: #4CAF50;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+    animation: blink 2s infinite;
+  }
+
+  .chat-sector-select {
+    padding: 10px 16px;
+    background: var(--dark3);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .chat-sector-select::-webkit-scrollbar { display: none; }
+
+  .sector-pill {
+    font-size: 11px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.2s;
+    flex-shrink: 0;
+  }
+
+  .sector-pill.active {
+    background: rgba(201,168,76,0.15);
+    border-color: rgba(201,168,76,0.4);
+    color: var(--gold);
+  }
+
+  .chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(201,168,76,0.2) transparent;
+  }
+
+  .msg { display: flex; flex-direction: column; max-width: 85%; animation: msgIn 0.3s ease; }
+
+  @keyframes msgIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .msg.bot { align-self: flex-start; }
+  .msg.user { align-self: flex-end; }
+
+  .msg-bubble {
+    padding: 10px 14px;
+    border-radius: 14px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .msg.bot .msg-bubble {
+    background: var(--dark3);
+    border: 1px solid rgba(255,255,255,0.06);
+    color: var(--text);
+    border-bottom-left-radius: 4px;
+  }
+
+  .msg.user .msg-bubble {
+    background: var(--gold);
+    color: #1a1200;
+    font-weight: 500;
+    border-bottom-right-radius: 4px;
+  }
+
+  .msg-time { font-size: 10px; color: var(--text-muted); margin-top: 3px; padding: 0 4px; }
+  .msg.user .msg-time { text-align: right; }
+
+  .quick-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 8px 16px;
+  }
+
+  .quick-btn {
+    font-size: 11px;
+    padding: 5px 11px;
+    border-radius: 20px;
+    border: 1px solid rgba(201,168,76,0.3);
+    background: rgba(201,168,76,0.06);
+    color: var(--gold);
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.2s;
+  }
+
+  .quick-btn:hover { background: rgba(201,168,76,0.15); }
+
+  .typing-indicator {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 14px;
+    background: var(--dark3);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 14px;
+    border-bottom-left-radius: 4px;
+    width: fit-content;
+  }
+
+  .typing-indicator span {
+    width: 6px; height: 6px;
+    background: var(--gold);
+    border-radius: 50%;
+    animation: typing 1.2s infinite;
+  }
+
+  .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+  .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+
+  @keyframes typing {
+    0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+    30% { transform: translateY(-5px); opacity: 1; }
+  }
+
+  .chat-input-area {
+    padding: 12px 14px;
+    background: var(--dark3);
+    border-top: 1px solid rgba(255,255,255,0.05);
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+  }
+
+  .chat-input-wrap {
+    flex: 1;
+    background: var(--dark);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 22px;
+    padding: 9px 16px;
+    transition: border-color 0.2s;
+  }
+
+  .chat-input-wrap:focus-within { border-color: rgba(201,168,76,0.4); }
+
+  #chatInput {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--text);
+    font-size: 13px;
+    font-family: 'DM Sans', sans-serif;
+    resize: none;
+    max-height: 80px;
+  }
+
+  #chatInput::placeholder { color: var(--text-muted); }
+
+  .chat-send {
+    width: 40px; height: 40px;
+    background: var(--gold);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.15s;
+  }
+
+  .chat-send:hover { background: var(--gold-light); transform: scale(1.05); }
+  .chat-send:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+  /* ── CONTACT ── */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 60px;
+    align-items: start;
+  }
+
+  .contact-info { display: flex; flex-direction: column; gap: 24px; }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    background: var(--dark2);
+    border: 1px solid var(--text-dim);
+    border-radius: 10px;
+  }
+
+  .contact-icon {
+    width: 42px; height: 42px;
+    background: rgba(201,168,76,0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .contact-item h4 { font-size: 13px; color: var(--text-muted); margin-bottom: 3px; }
+  .contact-item p { font-size: 14px; color: var(--text); }
+
+  .contact-form { display: flex; flex-direction: column; gap: 14px; }
+
+  .form-input {
+    background: var(--dark2);
+    border: 1px solid var(--text-dim);
+    border-radius: 8px;
+    padding: 13px 16px;
+    color: var(--text);
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+  }
+
+  .form-input:focus { border-color: rgba(201,168,76,0.4); }
+  .form-input::placeholder { color: var(--text-muted); }
+
+  textarea.form-input { min-height: 100px; resize: vertical; }
+
+  /* ── FOOTER ── */
+  footer {
+    border-top: 1px solid rgba(255,255,255,0.05);
+    padding: 40px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  footer span { color: var(--gold); }
+
+  /* ── ARABIC ── */
+  .ar { display: none; }
+  body.arabic .en { display: none; }
+  body.arabic .ar { display: block; }
+  body.arabic .ar-inline { display: inline; }
+  body.arabic .en-inline { display: none; }
+  body.arabic { direction: rtl; }
+  body.arabic nav { direction: rtl; }
+  .ar-inline { display: none; }
+  .en-inline { display: inline; }
+
+  /* ── RESPONSIVE ── */
+  /* ── MODAL ── */
+  .modal-header {
+    background: linear-gradient(135deg, #1a1400, #2a1f00);
+    border-bottom: 2px solid var(--gold);
+    padding: 40px 40px 30px;
+  }
+  .modal-emoji { font-size: 40px; margin-bottom: 12px; display: block; }
+  .modal-title { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--gold); margin-bottom: 8px; }
+  .modal-subtitle { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+  .modal-body { padding: 36px 40px; }
+  .modal-section { margin-bottom: 32px; }
+  .modal-section-title {
+    font-size: 13px; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 16px; padding-bottom: 8px;
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+  }
+  .service-row {
+    background: var(--dark3); border: 1px solid var(--text-dim);
+    border-radius: 10px; padding: 18px 20px; margin-bottom: 10px;
+  }
+  .service-row h4 { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 6px; }
+  .service-row p { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+  .service-row .price-tag {
+    display: inline-block; margin-top: 8px; font-size: 12px; font-weight: 600;
+    color: var(--gold); background: rgba(201,168,76,0.1);
+    border: 1px solid rgba(201,168,76,0.25); padding: 3px 12px; border-radius: 20px;
+  }
+  .example-box {
+    background: var(--dark); border: 1px solid rgba(201,168,76,0.15);
+    border-radius: 10px; padding: 18px 20px; margin-top: 10px;
+  }
+  .example-box .ex-label { font-size: 11px; color: var(--gold); font-weight: 600; margin-bottom: 8px; letter-spacing: 1px; }
+  .example-box .ex-msg {
+    background: var(--dark3); border-radius: 8px; padding: 12px 14px;
+    font-size: 13px; color: var(--text-muted); line-height: 1.7; font-style: italic;
+  }
+  .benefit-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .benefit-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: var(--text-muted); }
+  .benefit-list li::before { content: '→'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+  .modal-cta {
+    background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 10px; padding: 20px; text-align: center; margin-top: 24px;
+  }
+  .modal-cta p { font-size: 13px; color: var(--text-muted); margin-bottom: 14px; }
+  @media (max-width: 600px) {
+    .modal-header, .modal-body { padding: 24px 20px; }
+    .modal-title { font-size: 22px; }
+  }
+
+@media (max-width: 768px) {
+    nav { padding: 16px 20px; }
+    .nav-links { display: none; }
+    section { padding: 70px 20px; }
+    .hero { padding: 100px 20px 60px; }
+    .hero-stats { gap: 30px; flex-wrap: wrap; justify-content: center; }
+    .chatbot-inner { grid-template-columns: 1fr; padding: 0 20px; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="https://www.linkedin.com/in/smart-management-solutions-sms-811a3a243/" target="_blank" style="text-decoration:none;"><div class="nav-logo">Smart Management Solutions SMS</div></a>
+  <div class="nav-links">
+    <a href="#services" class="en">Services</a>
+    <a href="#services" class="ar" style="display:none;">الخدمات</a>
+    <a href="#how" class="en">How it works</a>
+    <a href="#how" class="ar" style="display:none;">كيف يعمل</a>
+    <a href="#demo" class="en">Live Demo</a>
+    <a href="#demo" class="ar" style="display:none;">تجربة مباشرة</a>
+    <a href="#contact" class="en">Contact</a>
+    <a href="#contact" class="ar" style="display:none;">تواصل</a>
+  </div>
+  <div style="display:flex; align-items:center; gap:16px;">
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" onclick="setLang('ar')">AR</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge en">Smart Management Solutions SMS — Doha, Qatar</div>
+  <div class="hero-badge ar" style="display:none;">Smart Management Solutions SMS — الدوحة، قطر</div>
+
+  <h1 class="en">Stop doing manually<br>what <span class="accent">AI can do</span><br>for you 24/7</h1>
+  <h1 class="ar" style="display:none;">توقف عن العمل اليدوي<br>ما يمكن لـ <span class="accent">الذكاء الاصطناعي</span><br>أن يفعله عنك 24/7</h1>
+
+  <p class="en">I build custom AI automation systems for businesses in Qatar — chatbots, workflows, reports, and more. In Arabic and English.</p>
+  <p class="ar" style="display:none;">أبني أنظمة أتمتة ذكاء اصطناعي مخصصة للشركات في قطر — شات بوت، تقارير تلقائية، إدارة الطلبات والمخزون. بالعربية والإنجليزية.</p>
+
+  <div class="hero-ctas">
+    <a href="#demo" class="btn-primary en">Try Live Demo</a>
+    <a href="#demo" class="btn-primary ar" style="display:none;">جرب الديمو المباشر</a>
+    <a href="#contact-form" class="btn-secondary en">Get Free Consultation</a>
+    <a href="#contact-form" class="btn-secondary ar" style="display:none;">احصل على استشارة مجانية</a>
+  </div>
+
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="num">6+</span>
+      <span class="label en">Sectors served</span>
+      <span class="label ar" style="display:none;">قطاعات مخدومة</span>
+    </div>
+    <div class="hero-stat">
+      <span class="num">24/7</span>
+      <span class="label en">Automation uptime</span>
+      <span class="label ar" style="display:none;">أتمتة مستمرة</span>
+    </div>
+    <div class="hero-stat">
+      <span class="num">AR/EN</span>
+      <span class="label en">Bilingual AI</span>
+      <span class="label ar" style="display:none;">ذكاء ثنائي اللغة</span>
+    </div>
+    <div class="hero-stat">
+      <span class="num">n8n</span>
+      <span class="label en">Powered by</span>
+      <span class="label ar" style="display:none;">مبني على</span>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-label en">What I do</div>
+  <div class="section-label ar" style="display:none;">ما أقدمه</div>
+  <h2 class="section-title en">AI automation for<br>every business type</h2>
+  <h2 class="section-title ar" style="display:none;">أتمتة ذكية لكل<br>نوع من الأعمال</h2>
+  <p class="section-sub en">From restaurants to hospitals — I build systems that save your team hours every day.</p>
+  <p class="section-sub ar" style="display:none;">من المطاعم إلى المستشفيات — أبني أنظمة توفر ساعات عمل يومياً لفريقك.</p>
+
+  <div class="sectors-grid">
+    <div class="sector-card" onclick="openSector('restaurant')" style="cursor:pointer;">
+      <span class="sector-icon">🍽️</span>
+      <div class="sector-name en">Restaurants & Cafés</div>
+      <div class="sector-name ar" style="display:none;">المطاعم والكافيهات</div>
+      <div class="sector-desc en">Menu chatbot, auto reservations, daily sales reports, loyalty programs.</div>
+      <div class="sector-desc ar" style="display:none;">شات بوت القائمة، الحجوزات التلقائية، تقارير المبيعات اليومية.</div>
+      <div class="sector-services">
+        <span class="service-tag">WhatsApp Bot</span>
+        <span class="service-tag en">Auto Reports</span>
+        <span class="service-tag ar" style="display:none;">تقارير تلقائية</span>
+        <span class="service-tag en">Order Mgmt</span>
+        <span class="service-tag ar" style="display:none;">إدارة الطلبات</span>
+      </div>
+      <div style="margin-top:14px; font-size:12px; color:var(--gold); display:flex; align-items:center; gap:6px;">
+        <span class="en">Learn more →</span><span class="ar" style="display:none;">اعرف أكثر ←</span>
+      </div>
+    </div>
+
+    <div class="sector-card" onclick="openSector('hotel')" style="cursor:pointer;">
+      <span class="sector-icon">🏨</span>
+      <div class="sector-name en">Hotels & Hospitality</div>
+      <div class="sector-name ar" style="display:none;">الفنادق والضيافة</div>
+      <div class="sector-desc en">Booking chatbot, welcome emails, Google review management, upsell automation.</div>
+      <div class="sector-desc ar" style="display:none;">شات بوت الحجوزات، رسائل الترحيب، إدارة تقييمات Google تلقائياً.</div>
+      <div class="sector-services">
+        <span class="service-tag en">Booking Bot</span>
+        <span class="service-tag ar" style="display:none;">بوت الحجز</span>
+        <span class="service-tag en">Review Mgmt</span>
+        <span class="service-tag ar" style="display:none;">إدارة التقييمات</span>
+        <span class="service-tag en">Upsell</span>
+        <span class="service-tag ar" style="display:none;">زيادة المبيعات</span>
+      </div>
+      <div style="margin-top:14px; font-size:12px; color:var(--gold);"><span class="en">Learn more →</span><span class="ar" style="display:none;">اعرف أكثر ←</span></div>
+    </div>
+
+    <div class="sector-card" onclick="openSector('import')" style="cursor:pointer;">
+      <span class="sector-icon">📦</span>
+      <div class="sector-name en">Import / Export Food</div>
+      <div class="sector-name ar" style="display:none;">الاستيراد والتصدير الغذائي</div>
+      <div class="sector-desc en">Stock alerts, supplier auto-orders, order tracking, daily manager reports.</div>
+      <div class="sector-desc ar" style="display:none;">تنبيهات المخزون، طلبات الموردين التلقائية، تتبع الطلبات.</div>
+      <div class="sector-services">
+        <span class="service-tag en">Stock Alerts</span>
+        <span class="service-tag ar" style="display:none;">تنبيهات المخزون</span>
+        <span class="service-tag en">Auto Orders</span>
+        <span class="service-tag ar" style="display:none;">طلبات تلقائية</span>
+        <span class="service-tag en">Tracking</span>
+        <span class="service-tag ar" style="display:none;">تتبع</span>
+      </div>
+      <div style="margin-top:14px; font-size:12px; color:var(--gold);"><span class="en">Learn more →</span><span class="ar" style="display:none;">اعرف أكثر ←</span></div>
+    </div>
+
+    <div class="sector-card" onclick="openSector('clinic')" style="cursor:pointer;">
+      <span class="sector-icon">🏥</span>
+      <div class="sector-name en">Clinics & Hospitals</div>
+      <div class="sector-name ar" style="display:none;">العيادات والمستشفيات</div>
+      <div class="sector-desc en">Appointment booking, patient reminders, results notifications, waitlist management.</div>
+      <div class="sector-desc ar" style="display:none;">حجز المواعيد، تذكير المرضى، إشعارات النتائج، قوائم الانتظار.</div>
+      <div class="sector-services">
+        <span class="service-tag en">Booking Bot</span>
+        <span class="service-tag ar" style="display:none;">بوت الحجز</span>
+        <span class="service-tag en">Reminders</span>
+        <span class="service-tag ar" style="display:none;">تذكيرات</span>
+        <span class="service-tag en">Notifications</span>
+        <span class="service-tag ar" style="display:none;">إشعارات</span>
+      </div>
+      <div style="margin-top:14px; font-size:12px; color:var(--gold);"><span class="en">Learn more →</span><span class="ar" style="display:none;">اعرف أكثر ←</span></div>
+    </div>
+
+    <div class="sector-card" onclick="openSector('rental')" style="cursor:pointer;">
+      <span class="sector-icon">🚗</span>
+      <div class="sector-name en">Car Rental Agencies</div>
+      <div class="sector-name ar" style="display:none;">شركات تأجير السيارات</div>
+      <div class="sector-desc en">Fleet management, auto contracts, return reminders, lead capture from website.</div>
+      <div class="sector-desc ar" style="display:none;">إدارة الأسطول، العقود التلقائية، تذكيرات الإرجاع، التقاط العملاء.</div>
+      <div class="sector-services">
+        <span class="service-tag en">Fleet Bot</span>
+        <span class="service-tag ar" style="display:none;">بوت الأسطول</span>
+        <span class="service-tag en">Auto Contracts</span>
+        <span class="service-tag ar" style="display:none;">عقود تلقائية</span>
+        <span class="service-tag en">Lead Gen</span>
+        <span class="service-tag ar" style="display:none;">توليد عملاء</span>
+      </div>
+      <div style="margin-top:14px; font-size:12px; color:var(--gold);"><span class="en">Learn more →</span><span class="ar" style="display:none;">اعرف أكثر ←</span></div>
+    </div>
+
+    <div class="sector-card" onclick="openSector('realestate')" style="cursor:pointer;">
+      <span class="sector-icon">🏗️</span>
+      <div class="sector-name en">Real Estate</div>
+      <div class="sector-name ar" style="display:none;">العقارات</div>
+      <div class="sector-desc en">Lead qualification bot, property alerts, automatic follow-up, document generation.</div>
+      <div class="sector-desc ar" style="display:none;">بوت تأهيل العملاء، تنبيهات العقارات، متابعة تلقائية، توليد المستندات.</div>
+      <div class="sector-services">
+        <span class="service-tag en">Lead Bot</span>
+        <span class="service-tag ar" style="display:none;">بوت العملاء</span>
+        <span class="service-tag en">Follow-up</span>
+        <span class="service-tag ar" style="display:none;">متابعة تلقائية</span>
+        <span class="service-tag en">Docs</span>
+        <span class="service-tag ar" style="display:none;">مستندات</span>
+      </div>
+      <div style="margin-top:14px; font-size:12px; color:var(--gold);"><span class="en">Learn more →</span><span class="ar" style="display:none;">اعرف أكثر ←</span></div>
+    </div>
+
+    <div class="sector-card" onclick="openSector('beauty')" style="cursor:pointer;">
+      <span class="sector-icon">💅</span>
+      <div class="sector-name en">Beauty & Hair Salons</div>
+      <div class="sector-name ar" style="display:none;">صالونات التجميل والشعر</div>
+      <div class="sector-desc en">Appointment booking, loyalty programs, client reminders, stock management, daily reports.</div>
+      <div class="sector-desc ar" style="display:none;">حجز المواعيد، برامج الولاء، تذكيرات العملاء، إدارة المخزون، التقارير اليومية.</div>
+      <div class="sector-services">
+        <span class="service-tag en">Booking Bot</span>
+        <span class="service-tag ar" style="display:none;">بوت الحجز</span>
+        <span class="service-tag en">Loyalty</span>
+        <span class="service-tag ar" style="display:none;">برنامج الولاء</span>
+        <span class="service-tag en">Auto Reminders</span>
+        <span class="service-tag ar" style="display:none;">تذكيرات تلقائية</span>
+      </div>
+      <div style="margin-top:14px; font-size:12px; color:var(--gold);"><span class="en">Learn more →</span><span class="ar" style="display:none;">اعرف أكثر ←</span></div>
+    </div>
+
+    <div class="sector-card" onclick="openSector('travel')" style="cursor:pointer;">
+      <span class="sector-icon">✈️</span>
+      <div class="sector-name en">Travel Agencies</div>
+      <div class="sector-name ar" style="display:none;">وكالات السفر</div>
+      <div class="sector-desc en">Auto quotes, visa assistant, trip reminders, promo alerts, post-trip feedback.</div>
+      <div class="sector-desc ar" style="display:none;">عروض تلقائية، مساعد فيزا، تذكيرات السفر، تنبيهات العروض.</div>
+      <div class="sector-services">
+        <span class="service-tag en">Quote Bot</span>
+        <span class="service-tag ar" style="display:none;">بوت العروض</span>
+        <span class="service-tag en">Visa AI</span>
+        <span class="service-tag ar" style="display:none;">مساعد فيزا</span>
+        <span class="service-tag en">Trip Alerts</span>
+        <span class="service-tag ar" style="display:none;">تنبيهات رحلات</span>
+      </div>
+      <div style="margin-top:14px; font-size:12px; color:var(--gold);"><span class="en">Learn more →</span><span class="ar" style="display:none;">اعرف أكثر ←</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECTOR MODAL ── -->
+<div id="sectorModal" style="display:none; position:fixed; inset:0; z-index:999; background:rgba(0,0,0,0.85); backdrop-filter:blur(8px); overflow-y:auto; padding:20px;">
+  <div id="modalContent" style="max-width:800px; margin:40px auto; background:var(--dark2); border:1px solid rgba(201,168,76,0.25); border-radius:16px; overflow:hidden; position:relative;">
+    <button onclick="closeModal()" style="position:absolute; top:16px; right:16px; background:rgba(255,255,255,0.08); border:none; color:var(--text); width:36px; height:36px; border-radius:50%; font-size:18px; cursor:pointer; z-index:10;">✕</button>
+    <div id="modalInner"></div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section id="how" style="background: var(--dark2); max-width:100%; padding: 100px 40px;">
+  <div style="max-width:1100px; margin:0 auto;">
+    <div class="section-label en">Process</div>
+    <div class="section-label ar" style="display:none;">الطريقة</div>
+    <h2 class="section-title en">From first call to<br>live automation</h2>
+    <h2 class="section-title ar" style="display:none;">من أول مكالمة<br>حتى التشغيل الكامل</h2>
+
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">01</span>
+        <h3 class="en">Free Consultation</h3>
+        <h3 class="ar" style="display:none;">استشارة مجانية</h3>
+        <p class="en">We discuss your business, identify time-wasting repetitive tasks, and define the right automation for you.</p>
+        <p class="ar" style="display:none;">نناقش عملك، نحدد المهام المتكررة المستهلكة للوقت، ونختار الأتمتة المناسبة لك.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">02</span>
+        <h3 class="en">Custom Demo</h3>
+        <h3 class="ar" style="display:none;">ديمو مخصص</h3>
+        <p class="en">I build a working demo with your actual business info — menu, products, team names — in 24 hours.</p>
+        <p class="ar" style="display:none;">أبني ديمو حقيقي بمعلومات شركتك الفعلية — القائمة، المنتجات، الفريق — خلال 24 ساعة.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">03</span>
+        <h3 class="en">Build & Deploy</h3>
+        <h3 class="ar" style="display:none;">البناء والتشغيل</h3>
+        <p class="en">Full setup in 3-5 days. Connected to WhatsApp, your data, and all your tools. Fully tested before handover.</p>
+        <p class="ar" style="display:none;">إعداد كامل في 3-5 أيام. متصل بواتساب وبياناتك وجميع أدواتك. مختبر بالكامل قبل التسليم.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">04</span>
+        <h3 class="en">Ongoing Support</h3>
+        <h3 class="ar" style="display:none;">دعم مستمر</h3>
+        <p class="en">Monthly maintenance, updates, and improvements. I'm always available for changes and new features.</p>
+        <p class="ar" style="display:none;">صيانة شهرية، تحديثات، وتحسينات مستمرة. متاح دائماً للتعديلات والمميزات الجديدة.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="section-label en">Investment</div>
+  <div class="section-label ar" style="display:none;">الاستثمار</div>
+  <h2 class="section-title en">Clear, honest pricing</h2>
+  <h2 class="section-title ar" style="display:none;">أسعار واضحة وشفافة</h2>
+
+  <div class="pricing-grid">
+    <div class="price-card">
+      <div class="price-label en">Starter</div>
+      <div class="price-label ar" style="display:none;">أساسي</div>
+      <div class="price-amount" style="font-size:22px; letter-spacing:0; color:var(--gold);">From 2,500 QAR</div>
+      <div class="price-unit en">one-time installation</div>
+      <div class="price-unit ar" style="display:none;">تركيب لمرة واحدة</div>
+      <ul class="price-features">
+        <li class="en">1 WhatsApp chatbot</li>
+        <li class="ar" style="display:none;">شات بوت واتساب واحد</li>
+        <li class="en">Arabic + English</li>
+        <li class="ar" style="display:none;">عربي + إنجليزي</li>
+        <li class="en">Menu / FAQ / Hours</li>
+        <li class="ar" style="display:none;">القائمة / الأسئلة / الأوقات</li>
+        <li class="en">1 month support</li>
+        <li class="ar" style="display:none;">شهر دعم فني</li>
+      </ul>
+    </div>
+    <div class="price-card featured">
+      <div class="price-label en">Business</div>
+      <div class="price-label ar" style="display:none;">أعمال</div>
+      <div class="price-amount" style="font-size:22px; letter-spacing:0; color:var(--gold);">From 4,000 QAR</div>
+      <div class="price-unit en">one-time installation</div>
+      <div class="price-unit ar" style="display:none;">تركيب لمرة واحدة</div>
+      <ul class="price-features">
+        <li class="en">Full automation package</li>
+        <li class="ar" style="display:none;">حزمة أتمتة كاملة</li>
+        <li class="en">Chatbot + reports + alerts</li>
+        <li class="ar" style="display:none;">شات بوت + تقارير + تنبيهات</li>
+        <li class="en">Google Sheets integration</li>
+        <li class="ar" style="display:none;">ربط مع Google Sheets</li>
+        <li class="en">3 months support</li>
+        <li class="ar" style="display:none;">3 أشهر دعم فني</li>
+      </ul>
+    </div>
+    <div class="price-card">
+      <div class="price-label en">Monthly Maintenance</div>
+      <div class="price-label ar" style="display:none;">صيانة شهرية</div>
+      <div class="price-amount" style="font-size:22px; letter-spacing:0; color:var(--gold);">From 800 QAR</div>
+      <div class="price-unit en">per month — all sectors</div>
+      <div class="price-unit ar" style="display:none;">شهرياً — جميع القطاعات</div>
+      <ul class="price-features">
+        <li class="en">Hosting & uptime</li>
+        <li class="ar" style="display:none;">استضافة ومراقبة</li>
+        <li class="en">Data & menu updates</li>
+        <li class="ar" style="display:none;">تحديث البيانات والقوائم</li>
+        <li class="en">Monthly performance report</li>
+        <li class="ar" style="display:none;">تقرير أداء شهري</li>
+        <li class="en">Priority support</li>
+        <li class="ar" style="display:none;">دعم فني ذو أولوية</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- LIVE DEMO -->
+<div class="chatbot-section" id="demo">
+  <div class="chatbot-inner">
+    <div class="chatbot-info">
+      <div class="section-label en">Live Demo</div>
+      <div class="section-label ar" style="display:none;">تجربة مباشرة</div>
+      <h2 class="section-title en">Talk to a real<br>AI chatbot now</h2>
+      <h2 class="section-title ar" style="display:none;">تحدث مع شات بوت<br>حقيقي الآن</h2>
+      <p class="section-sub en">Select a sector and ask anything — in Arabic or English. This is exactly what your customers would experience.</p>
+      <p class="section-sub ar" style="display:none;">اختر القطاع واسأل أي شيء — بالعربية أو الإنجليزية. هذا بالضبط ما سيختبره عملاؤك.</p>
+
+      <div class="chatbot-features">
+        <div class="chat-feature">
+          <div class="chat-feature-icon">🌐</div>
+          <div class="chat-feature-text">
+            <h4 class="en">Bilingual — Arabic & English</h4>
+            <h4 class="ar" style="display:none;">ثنائي اللغة — عربي وإنجليزي</h4>
+            <p class="en">Responds in whatever language the customer uses</p>
+            <p class="ar" style="display:none;">يرد بأي لغة يستخدمها العميل</p>
+          </div>
+        </div>
+        <div class="chat-feature">
+          <div class="chat-feature-icon">⚡</div>
+          <div class="chat-feature-text">
+            <h4 class="en">Instant responses</h4>
+            <h4 class="ar" style="display:none;">ردود فورية</h4>
+            <p class="en">Under 2 seconds — faster than any human employee</p>
+            <p class="ar" style="display:none;">أقل من ثانيتين — أسرع من أي موظف بشري</p>
+          </div>
+        </div>
+        <div class="chat-feature">
+          <div class="chat-feature-icon">🎯</div>
+          <div class="chat-feature-text">
+            <h4 class="en">Sector-specific knowledge</h4>
+            <h4 class="ar" style="display:none;">معرفة متخصصة بكل قطاع</h4>
+            <p class="en">Knows your menu, prices, hours, and procedures</p>
+            <p class="ar" style="display:none;">يعرف قائمتك، أسعارك، أوقاتك، وإجراءاتك</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+      <div class="chat-header">
+        <div class="chat-avatar">🤖</div>
+        <div class="chat-header-text">
+          <h3 class="en">AI Demo Assistant <span class="online-dot"></span></h3>
+          <h3 class="ar" style="display:none;">مساعد الديمو الذكي <span class="online-dot"></span></h3>
+          <p class="en">Select a sector below to start</p>
+          <p class="ar" style="display:none;">اختر قطاعاً أدناه للبدء</p>
+        </div>
+      </div>
+
+      <div class="chat-sector-select">
+        <button class="sector-pill active" onclick="selectSector(this, 'restaurant')">🍽️ Restaurant</button>
+        <button class="sector-pill" onclick="selectSector(this, 'hotel')">🏨 Hotel</button>
+        <button class="sector-pill" onclick="selectSector(this, 'clinic')">🏥 Clinic</button>
+        <button class="sector-pill" onclick="selectSector(this, 'rental')">🚗 Car Rental</button>
+        <button class="sector-pill" onclick="selectSector(this, 'import')">📦 Import/Export</button>
+        <button class="sector-pill" onclick="selectSector(this, 'travel')">✈️ Travel Agency</button>
+        <button class="sector-pill" onclick="selectSector(this, 'beauty')">💅 Beauty Salon</button>
+      </div>
+
+      <div class="chat-messages" id="chatMessages"></div>
+
+      <div class="quick-btns" id="quickBtns"></div>
+
+      <div class="chat-input-area">
+        <div class="chat-input-wrap">
+          <textarea id="chatInput" placeholder="Type your message... / اكتب رسالتك..." rows="1"></textarea>
+        </div>
+        <button class="chat-send" id="sendBtn" onclick="sendChat()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#1a1200"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label en">Contact</div>
+  <div class="section-label ar" style="display:none;">تواصل</div>
+  <h2 class="section-title en">Ready to automate<br>your business?</h2>
+  <h2 class="section-title ar" style="display:none;">جاهز لأتمتة<br>عملك؟</h2>
+  <p class="section-sub en">Fill the form and we'll get back to you within 24 hours — or reach us directly below.</p>
+  <p class="section-sub ar" style="display:none;">املأ النموذج وسنتواصل معك خلال 24 ساعة — أو تواصل معنا مباشرةً أدناه.</p>
+
+  <div class="contact-grid">
+    <div class="contact-info" id="contact-info">
+      <div class="contact-item">
+        <div class="contact-icon">📱</div>
+        <div>
+          <h4 class="en">Phone / Mobile</h4>
+          <h4 class="ar" style="display:none;">هاتف / جوال</h4>
+          <p>+974 33885493</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📧</div>
+        <div>
+          <h4 class="en">Email</h4>
+          <h4 class="ar" style="display:none;">البريد الإلكتروني</h4>
+          <p>smart.management.solution@hotmail.com</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">💼</div>
+        <div>
+          <h4>LinkedIn</h4>
+          <p><a href="https://www.linkedin.com/in/smart-management-solutions-sms-811a3a243/" target="_blank" style="color:var(--gold); text-decoration:none;">Smart Management Solutions SMS</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form" id="contact-form">
+      <input type="text" id="contact_name" class="form-input en" placeholder="Your name / Company">
+      <input type="text" id="contact_name_ar" class="form-input ar" placeholder="اسمك / الشركة" style="display:none;">
+      <input type="text" id="contact_contact" class="form-input" placeholder="WhatsApp or Email">
+      <select class="form-input" id="sectorSelect">
+        <option value="">Select your sector...</option>
+        <option value="Restaurant / Café">🍽️ Restaurant / Café</option>
+        <option value="Hotel / Hospitality">🏨 Hotel / Hospitality</option>
+        <option value="Import / Export">📦 Import / Export</option>
+        <option value="Clinic / Hospital">🏥 Clinic / Hospital</option>
+        <option value="Car Rental">🚗 Car Rental</option>
+        <option value="Real Estate">🏗️ Real Estate</option>
+        <option value="Other">Other</option>
+      </select>
+      <textarea id="contact_message" class="form-input en" placeholder="Tell me about your business and what you want to automate..."></textarea>
+      <textarea id="contact_message_ar" class="form-input ar" placeholder="أخبرني عن عملك وما تريد أتمتته..." style="display:none;"></textarea>
+      <button class="btn-primary en" id="sendEmailBtn" onclick="sendEmail()">Send Message</button>
+      <button class="btn-primary ar" id="sendEmailBtnAr" style="display:none;" onclick="sendEmail()">إرسال الرسالة</button>
+      <div id="form-success" style="display:none; background:rgba(76,175,80,0.1); border:1px solid #4CAF50; border-radius:8px; padding:14px; font-size:13px; color:#4CAF50; text-align:center; margin-top:8px;">
+        ✅ Message sent successfully! I will contact you within 24 hours.
+      </div>
+      <div id="form-error" style="display:none; background:rgba(244,67,54,0.1); border:1px solid #f44336; border-radius:8px; padding:14px; font-size:13px; color:#f44336; text-align:center; margin-top:8px;">
+        ❌ Something went wrong. Please use the contact form or call us directly.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p class="en">© 2025 <span>Smart Management Solutions SMS</span> — AI Automation Consultant, Doha Qatar</p>
+  <p class="ar" style="display:none;">© 2025 <span>Smart Management Solutions SMS</span> — مستشار أتمتة الأعمال، الدوحة قطر</p>
+</footer>
+
+<script>
+// ── SECTOR MODAL DATA ──
+const sectorPages = {
+  restaurant: {
+    emoji: '🍽️',
+    en: {
+      title: 'Restaurants & Cafés',
+      subtitle: 'Save 3-4 hours daily on repetitive customer questions. Your staff focuses on food & service — AI handles the rest.',
+      services: [
+        { name: 'WhatsApp Menu Chatbot', desc: 'Customers ask about dishes, prices, ingredients, allergens — bot answers instantly 24/7 in Arabic & English. Handles reservation requests and collects guest details automatically.', price: 'Request a Quote' },
+        { name: 'Online Order via WhatsApp', desc: 'Customer sends order directly on WhatsApp → system records it in Google Sheets → kitchen gets notified → customer gets confirmation with estimated time.', price: 'Request a Quote' },
+        { name: 'Daily Sales Report', desc: 'Every morning at 8AM → WhatsApp message to manager with: top-selling dishes, total revenue, stock alerts, pending orders.', price: 'Request a Quote' },
+        { name: 'Loyalty Program Automation', desc: 'System tracks customer visits, sends rewards on 5th visit, birthday discounts, and VIP offers automatically.', price: 'Request a Quote' },
+        { name: 'Google Reviews Auto-Response', desc: 'AI reads every new Google review and posts a professional personalized response within minutes.', price: 'Request a Quote' },
+      ],
+      examples: [
+        { label: 'MENU INQUIRY', msg: '📱 Customer: "Do you have vegetarian options? What time do you close?"\n🤖 Bot: "Yes! We offer Vegetable Machboos (45 QAR), Fattoush Salad (28 QAR), and Hummus platters. We are open until 11:30 PM daily. Would you like to reserve a table? 😊"' },
+        { label: 'RESERVATION', msg: '📱 Customer: "I want to book a table for 6 people this Friday at 8PM."\n🤖 Bot: "Perfect! I have noted your reservation: Friday, 6 guests at 8:00 PM. May I have your name and phone number to confirm? Our team will call you within the hour."' },
+        { label: 'LOYALTY REWARD', msg: '📱 Bot (auto): "Congratulations Ahmed! This is your 5th visit with us. You have earned a FREE dessert on your next visit. Show this message to your waiter. Valid for 30 days. 🎁"' },
+      ],
+      benefits: ['Customers get instant answers — no waiting, no missed calls', 'Staff fully focused on food quality and service', 'Never lose a reservation because no one answered the phone', 'Professional 24/7 presence even during rush hours', 'Real-time manager dashboard every morning'],
+    },
+    ar: {
+      title: 'المطاعم والكافيهات',
+      subtitle: 'وفّر 3-4 ساعات يومياً من الأسئلة المتكررة. فريقك يركز على الطعام والخدمة — الذكاء الاصطناعي يتولى الباقي.',
+      services: [
+        { name: 'شات بوت القائمة على واتساب', desc: 'العملاء يسألون عن الأطباق والأسعار والمكونات — البوت يجيب فوراً 24/7 بالعربية والإنجليزية. يستقبل طلبات الحجز ويجمع بيانات الضيوف تلقائياً.', price: 'احصل على عرض مخصص' },
+        { name: 'الطلب عبر واتساب', desc: 'العميل يرسل طلبه على واتساب ← النظام يسجله في Google Sheets ← المطبخ يتلقى إشعاراً ← العميل يحصل على تأكيد مع وقت التحضير المتوقع.', price: 'احصل على عرض مخصص' },
+        { name: 'تقرير المبيعات اليومي', desc: 'كل صباح الساعة 8 ← رسالة واتساب للمدير تتضمن: الأطباق الأكثر مبيعاً، إجمالي الإيرادات، تنبيهات المخزون، الطلبات المعلقة.', price: 'احصل على عرض مخصص' },
+        { name: 'برنامج الولاء التلقائي', desc: 'النظام يتتبع زيارات العملاء ويرسل مكافآت عند الزيارة الخامسة، خصومات أعياد الميلاد، وعروض VIP تلقائياً.', price: 'احصل على عرض مخصص' },
+        { name: 'الرد التلقائي على تقييمات Google', desc: 'الذكاء الاصطناعي يقرأ كل تقييم جديد على Google وينشر رداً احترافياً مخصصاً في دقائق.', price: 'احصل على عرض مخصص' },
+      ],
+      examples: [
+        { label: 'استفسار القائمة', msg: '📱 العميل: "هل يوجد أطباق نباتية؟ متى تغلقون؟"\n🤖 البوت: "نعم! لدينا مجبوس خضار (45 ريال)، سلطة فتوش (28 ريال)، وأطباق حمص. نعمل حتى 11:30 مساءً. هل تريد حجز طاولة؟ 😊"' },
+        { label: 'حجز طاولة', msg: '📱 العميل: "أريد حجز طاولة لـ 6 أشخاص الجمعة الساعة 8 مساءً."\n🤖 البوت: "ممتاز! سجلت حجزك: الجمعة، 6 أشخاص الساعة 8 مساءً. ما اسمك ورقم هاتفك للتأكيد؟ سيتصل بك فريقنا خلال ساعة."' },
+        { label: 'مكافأة الولاء', msg: '📱 البوت (تلقائي): "مبروك أحمد! هذه زيارتك الخامسة معنا. حصلت على حلوى مجانية في زيارتك القادمة. أرِ هذه الرسالة للنادل. صالحة 30 يوماً. 🎁"' },
+      ],
+      benefits: ['العملاء يحصلون على إجابات فورية — بدون انتظار أو مكالمات فائتة', 'الفريق يركز على جودة الطعام والخدمة', 'لا تضيع أي حجز بسبب عدم الرد على الهاتف', 'حضور احترافي 24/7 حتى في أوقات الذروة', 'لوحة متابعة يومية للمدير كل صباح'],
+    }
+  },
+
+  hotel: {
+    emoji: '🏨',
+    en: {
+      title: 'Hotels & Hospitality',
+      subtitle: 'Elevate guest experience with instant AI responses, automated check-in flows, and smart upselling — without adding staff.',
+      services: [
+        { name: 'Booking & Availability Chatbot', desc: 'Guests ask about room types, rates, availability, and amenities — bot responds instantly with options. Collects booking preferences and forwards hot leads to reservations team.', price: 'Request a Quote' },
+        { name: 'Automated Welcome & Pre-Arrival', desc: 'Email/WhatsApp sent 24h before arrival with: check-in instructions, parking info, WiFi password, local tips, and upsell offers (spa, airport transfer, restaurant).', price: 'Request a Quote' },
+        { name: 'Google Review Management', desc: 'AI monitors all new reviews, generates professional responses matching your hotel brand tone, posts instantly. Negative reviews trigger internal alert to manager.', price: 'Request a Quote' },
+        { name: 'Daily Occupancy Report', desc: 'Every morning: occupancy rate, revenue per room, arrivals/departures today, VIP guests, pending maintenance → sent to GM on WhatsApp.', price: 'Request a Quote' },
+        { name: 'Upsell Automation', desc: 'After booking confirmation → automatic offer for: room upgrade, airport transfer, romantic package, spa session. Increases revenue per guest by 15-25%.', price: 'Request a Quote' },
+      ],
+      examples: [
+        { label: 'ROOM INQUIRY', msg: '📱 Guest: "Do you have a room for 2 nights, Dec 10-12? What is included?"\n🤖 Bot: "Great timing! Deluxe Sea View rooms are available at 380 QAR/night including buffet breakfast, pool & gym, and free WiFi. Shall I hold a room? I will also send our spa package offer 🌟"' },
+        { label: 'UPSELL OFFER', msg: '📱 Bot (auto after booking): "Your stay is confirmed! Would you like to add: Airport transfer (120 QAR), Spa session for 2 (280 QAR), or Romantic dinner package (350 QAR)? Reply with your choice and we will arrange everything."' },
+        { label: 'PRE-ARRIVAL', msg: '📱 Bot (24h before): "Welcome! Your check-in is tomorrow at 3PM. Parking is available (free). WiFi: PearlSuites2025. Restaurant serves from 7AM. Need airport transfer? Reply YES and we will arrange it. See you tomorrow!"' },
+      ],
+      benefits: ['Instant response to every inquiry — even at 3AM', 'More revenue per guest through smart upselling', 'Consistent professional brand voice in every interaction', '30% reduction in repetitive calls to front desk', 'Manager gets complete daily overview on WhatsApp'],
+    },
+    ar: {
+      title: 'الفنادق والضيافة',
+      subtitle: 'ارتقِ بتجربة الضيوف مع ردود ذكاء اصطناعي فورية وعمليات تسجيل وصول تلقائية وبيع ذكي — بدون موظفين إضافيين.',
+      services: [
+        { name: 'شات بوت الحجز والتوفر', desc: 'الضيوف يسألون عن أنواع الغرف والأسعار والتوفر والمرافق — البوت يجيب فوراً مع الخيارات. يجمع تفضيلات الحجز ويحول العملاء الجادين لفريق الحجوزات.', price: 'احصل على عرض مخصص' },
+        { name: 'رسالة الترحيب التلقائية', desc: 'بريد/واتساب يُرسل قبل 24 ساعة من الوصول يتضمن: تعليمات تسجيل الوصول، معلومات الموقف، كلمة مرور WiFi، نصائح محلية، وعروض إضافية (سبا، نقل مطار، مطعم).', price: 'احصل على عرض مخصص' },
+        { name: 'إدارة تقييمات Google', desc: 'الذكاء الاصطناعي يراقب كل التقييمات الجديدة وينشئ ردوداً احترافية تعكس هوية فندقك. التقييمات السلبية تُرسل تنبيهاً فورياً للمدير.', price: 'احصل على عرض مخصص' },
+        { name: 'تقرير الإشغال اليومي', desc: 'كل صباح: نسبة الإشغال، الإيرادات لكل غرفة، الوصول/المغادرة اليوم، ضيوف VIP، الصيانة المعلقة → يُرسل للمدير على واتساب.', price: 'احصل على عرض مخصص' },
+        { name: 'أتمتة البيع الإضافي', desc: 'بعد تأكيد الحجز ← عرض تلقائي لـ: ترقية الغرفة، نقل المطار، باقة رومانسية، جلسة سبا. يزيد الإيرادات لكل ضيف بنسبة 15-25%.', price: 'احصل على عرض مخصص' },
+      ],
+      examples: [
+        { label: 'استفسار الغرف', msg: '📱 الضيف: "هل يوجد غرفة ليلتين 10-12 ديسمبر؟ ماذا يشمل العرض؟"\n🤖 البوت: "توقيت ممتاز! غرف ديلوكس إطلالة بحرية بـ 380 ريال/ليلة تشمل إفطار بوفيه، مسبح، وواي فاي. أحجز لك؟ سأرسل عرض السبا أيضاً 🌟"' },
+        { label: 'عرض ترقية', msg: '📱 البوت (تلقائي بعد الحجز): "حجزك مؤكد! هل تريد إضافة: نقل مطار (120 ريال)، جلسة سبا للاثنين (280 ريال)، أو باقة عشاء رومانسي (350 ريال)؟ أرسل اختيارك وسنرتب كل شيء."' },
+        { label: 'ما قبل الوصول', msg: '📱 البوت (قبل 24 ساعة): "أهلاً! تسجيل وصولك غداً الساعة 3 عصراً. الموقف مجاني. الواي فاي: PearlSuites2025. المطعم يفتح 7 صباحاً. تحتاج نقل من المطار؟ رد بنعم ونرتب لك. نراك غداً!"' },
+      ],
+      benefits: ['رد فوري على كل استفسار — حتى الساعة 3 فجراً', 'إيرادات أعلى لكل ضيف من خلال البيع الذكي', 'صوت علامة تجارية احترافي ومتسق في كل تفاعل', 'تقليل 30% من المكالمات المتكررة للاستقبال', 'المدير يحصل على نظرة شاملة يومية على واتساب'],
+    }
+  },
+
+  import: {
+    emoji: '📦',
+    en: {
+      title: 'Import / Export Food',
+      subtitle: 'Automate stock alerts, supplier orders, client tracking and daily reporting. Eliminate manual follow-ups completely.',
+      services: [
+        { name: 'Client WhatsApp Chatbot', desc: 'Clients ask about product availability, current prices, delivery timelines — bot answers instantly. Takes purchase orders and records them in Google Sheets automatically.', price: 'Request a Quote' },
+        { name: 'Automated Order Tracking', desc: 'Client sends order number on WhatsApp → system retrieves real-time status → automatic reply: "Your order #1042 — In transit — Delivery tomorrow 10AM-2PM"', price: 'Request a Quote' },
+        { name: 'Stock Arrival Alerts', desc: 'When new shipment is logged → system auto-sends WhatsApp to all interested clients: "New stock arrived: Spanish Olive Oil 5L — 45 QAR — Limited quantity. Order now?"', price: 'Request a Quote' },
+        { name: 'Daily Manager Report', desc: 'Every morning: yesterday\'s sales in QAR, products at minimum stock level, pending orders, outstanding invoices → sent to manager on WhatsApp at 8AM.', price: 'Request a Quote' },
+        { name: 'Supplier Auto-Order System', desc: 'When stock reaches minimum threshold → system automatically emails the right supplier with the correct product, quantity, and agreed price. Tracks confirmation.', price: 'Request a Quote' },
+      ],
+      examples: [
+        { label: 'PRODUCT INQUIRY', msg: '📱 Client: "Is Basmati Rice 25kg available? What is the price?"\n🤖 Bot: "Yes! Basmati Rice 25kg is in stock at 140 QAR/bag. Minimum order: 5 bags. Free delivery for orders above 1,000 QAR. Shall I record your order? Team confirms within 2 hours."' },
+        { label: 'STOCK ALERT', msg: '📱 Bot (auto): "New stock arrived: Spanish Olive Oil 5L — 45 QAR/bottle. Limited quantity: 200 units. Place your order in the next 24h to guarantee your allocation. Reply ORDER to reserve."' },
+        { label: 'ORDER TRACKING', msg: '📱 Client: "1042"\n🤖 Bot: "Order #1042: Your shipment of Olive Oil (50 units) + Pasta (100 boxes) is in transit. Expected delivery: tomorrow between 9AM–1PM. Driver will call 30 min before arrival."' },
+      ],
+      benefits: ['Clients get instant product info without calling your team', 'Never miss a reorder — stock alerts go out automatically', 'Managers start the day fully informed without manual reports', 'Suppliers ordered automatically before stock runs out', '4-5 hours saved daily on manual communication'],
+    },
+    ar: {
+      title: 'الاستيراد والتصدير الغذائي',
+      subtitle: 'أتمت تنبيهات المخزون وطلبات الموردين وتتبع العملاء والتقارير اليومية. تخلص من المتابعة اليدوية نهائياً.',
+      services: [
+        { name: 'شات بوت واتساب للعملاء', desc: 'العملاء يسألون عن توفر المنتجات والأسعار الحالية ومواعيد التسليم — البوت يجيب فوراً. يستقبل طلبات الشراء ويسجلها في Google Sheets تلقائياً.', price: 'احصل على عرض مخصص' },
+        { name: 'تتبع الطلبات التلقائي', desc: 'العميل يرسل رقم طلبه على واتساب ← النظام يسترجع الحالة الحية ← رد تلقائي: "طلبك #1042 — في الشحن — التسليم غداً 10ص-2ظ"', price: 'احصل على عرض مخصص' },
+        { name: 'تنبيهات وصول المخزون', desc: 'عند تسجيل شحنة جديدة ← النظام يرسل تلقائياً واتساب لجميع العملاء المهتمين: "وصل مخزون جديد: زيت زيتون إسباني 5 لتر — 45 ريال — كمية محدودة. اطلب الآن؟"', price: 'احصل على عرض مخصص' },
+        { name: 'تقرير المدير اليومي', desc: 'كل صباح: مبيعات الأمس بالريال، المنتجات عند الحد الأدنى، الطلبات المعلقة، الفواتير المستحقة ← يُرسل للمدير على واتساب الساعة 8 صباحاً.', price: 'احصل على عرض مخصص' },
+        { name: 'نظام الطلب التلقائي من الموردين', desc: 'عند انخفاض المخزون للحد الأدنى ← النظام يرسل تلقائياً بريداً للمورد المناسب بالمنتج والكمية والسعر المتفق عليه. يتتبع التأكيد.', price: 'احصل على عرض مخصص' },
+      ],
+      examples: [
+        { label: 'استفسار منتج', msg: '📱 العميل: "هل الأرز البسمتي 25 كيلو متوفر؟ ما السعر؟"\n🤖 البوت: "نعم! الأرز البسمتي 25 كيلو بـ 140 ريال/كيس. الحد الأدنى: 5 أكياس. توصيل مجاني فوق 1,000 ريال. أسجل طلبك؟ سيؤكد الفريق خلال ساعتين."' },
+        { label: 'تنبيه وصول مخزون', msg: '📱 البوت (تلقائي): "وصل مخزون جديد: زيت زيتون إسباني 5 لتر — 45 ريال/زجاجة. الكمية محدودة: 200 وحدة. اطلب خلال 24 ساعة لضمان حصتك. رد بـ اطلب للحجز."' },
+        { label: 'تتبع الطلب', msg: '📱 العميل: "1042"\n🤖 البوت: "طلب #1042: شحنتك (زيت زيتون 50 وحدة + معكرونة 100 صندوق) في الطريق. التسليم المتوقع: غداً 9ص-1ظ. السائق سيتصل 30 دقيقة قبل الوصول."' },
+      ],
+      benefits: ['العملاء يحصلون على معلومات المنتجات فوراً بدون الاتصال بفريقك', 'لا تفوت إعادة طلب — تنبيهات المخزون تصدر تلقائياً', 'المديرون يبدأون يومهم مطلعين بالكامل بدون تقارير يدوية', 'الموردون يُطلب منهم تلقائياً قبل نفاد المخزون', 'توفير 4-5 ساعات يومياً من التواصل اليدوي'],
+    }
+  },
+
+  clinic: {
+    emoji: '🏥',
+    en: {
+      title: 'Clinics & Hospitals',
+      subtitle: 'Automate appointment booking, patient reminders, and follow-ups. Reduce front-desk workload by 60%.',
+      services: [
+        { name: 'WhatsApp Appointment Booking', desc: 'Patient selects doctor, specialty, preferred date and time on WhatsApp → system checks availability → confirms instantly → adds to calendar automatically.', price: 'Request a Quote' },
+        { name: 'Automated Appointment Reminders', desc: 'WhatsApp reminder sent 24h and 2h before appointment. If patient doesn\'t confirm → automatic follow-up. Reduces no-shows by 40%.', price: 'Request a Quote' },
+        { name: 'Waitlist Management', desc: 'Cancellation received → system immediately notifies first person on waitlist → if no response in 30 min → notifies next. Fills every slot automatically.', price: 'Request a Quote' },
+        { name: 'Test Results Notification', desc: 'Lab results ready → automatic WhatsApp to patient: "Your results are ready. View securely here or book a follow-up appointment." Reduces incoming calls by 50%.', price: 'Request a Quote' },
+        { name: 'Post-Visit Follow-Up', desc: 'Day after consultation → automatic message: "How are you feeling today? Any questions about your prescription? Need to schedule a follow-up?" Improves patient satisfaction.', price: 'Request a Quote' },
+      ],
+      examples: [
+        { label: 'APPOINTMENT BOOKING', msg: '📱 Patient: "I need to see a dermatologist this week."\n🤖 Bot: "Dr. Layla Hassan (Dermatology) is available: Tuesday 10AM, Wednesday 2:30PM, or Thursday 11AM. Fee: 250 QAR. Do you have insurance? Which slot works for you?"' },
+        { label: 'REMINDER', msg: '📱 Bot (24h before): "Reminder: You have an appointment with Dr. Ahmed Al Rashidi tomorrow at 10:00 AM. Please bring your Qatar ID and insurance card. Reply CONFIRM to keep or CANCEL to reschedule."' },
+        { label: 'RESULTS READY', msg: '📱 Bot (auto): "Your lab results are ready. You can: 1) View them at the clinic reception, or 2) Book a follow-up with Dr. Ahmed to discuss. Shall I schedule a 15-min consultation?"' },
+      ],
+      benefits: ['Patients book appointments anytime — no waiting on hold', '40% reduction in no-shows with smart reminders', 'Front desk handles complex cases only', 'Full appointment calendar managed automatically', 'Patients feel cared for with personalized follow-ups'],
+    },
+    ar: {
+      title: 'العيادات والمستشفيات',
+      subtitle: 'أتمت حجز المواعيد والتذكيرات ومتابعة المرضى. قلل عبء الاستقبال بنسبة 60%.',
+      services: [
+        { name: 'حجز المواعيد على واتساب', desc: 'المريض يختار الطبيب والتخصص والتاريخ والوقت المناسب على واتساب ← النظام يتحقق من التوفر ← يؤكد فوراً ← يضيف للتقويم تلقائياً.', price: 'احصل على عرض مخصص' },
+        { name: 'تذكيرات المواعيد التلقائية', desc: 'تذكير واتساب يُرسل قبل 24 ساعة و2 ساعة من الموعد. إذا لم يؤكد المريض ← متابعة تلقائية. يقلل الغيابات بنسبة 40%.', price: 'احصل على عرض مخصص' },
+        { name: 'إدارة قائمة الانتظار', desc: 'استلام الإلغاء ← النظام يخطر أول شخص في قائمة الانتظار فوراً ← إذا لم يستجب خلال 30 دقيقة ← يخطر التالي. يملأ كل موعد تلقائياً.', price: 'احصل على عرض مخصص' },
+        { name: 'إشعار نتائج الفحوصات', desc: 'نتائج المختبر جاهزة ← واتساب تلقائي للمريض: "نتائجك جاهزة. اعرضها بأمان هنا أو احجز موعداً للمتابعة." يقلل المكالمات الواردة بنسبة 50%.', price: 'احصل على عرض مخصص' },
+        { name: 'المتابعة بعد الزيارة', desc: 'في اليوم التالي للكشف ← رسالة تلقائية: "كيف تشعر اليوم؟ هل لديك أسئلة عن الوصفة الطبية؟ هل تحتاج تحديد موعد متابعة؟" يحسن رضا المرضى.', price: 'احصل على عرض مخصص' },
+      ],
+      examples: [
+        { label: 'حجز موعد', msg: '📱 المريض: "أريد مراجعة طبيب جلدية هذا الأسبوع."\n🤖 البوت: "الدكتورة ليلى حسن (الجلدية) متاحة: الثلاثاء 10ص، الأربعاء 2:30ظ، أو الخميس 11ص. رسوم الكشف: 250 ريال. هل لديك تأمين؟ أي وقت يناسبك؟"' },
+        { label: 'تذكير بالموعد', msg: '📱 البوت (قبل 24 ساعة): "تذكير: لديك موعد مع الدكتور أحمد الرشيدي غداً الساعة 10 صباحاً. يرجى إحضار الهوية القطرية وبطاقة التأمين. رد بـ تأكيد للاحتفاظ أو إلغاء لإعادة الجدولة."' },
+        { label: 'النتائج جاهزة', msg: '📱 البوت (تلقائي): "نتائج فحوصاتك جاهزة. يمكنك: 1) استلامها من الاستقبال، أو 2) حجز متابعة مع الدكتور أحمد لمناقشتها. هل أرتب موعداً لـ 15 دقيقة؟"' },
+      ],
+      benefits: ['المرضى يحجزون المواعيد في أي وقت — بدون انتظار على الهاتف', 'تقليل 40% من الغيابات بالتذكيرات الذكية', 'الاستقبال يتعامل فقط مع الحالات المعقدة', 'جدول المواعيد الكامل يُدار تلقائياً', 'المرضى يشعرون بالاهتمام من خلال المتابعة الشخصية'],
+    }
+  },
+
+  rental: {
+    emoji: '🚗',
+    en: {
+      title: 'Car Rental Agencies',
+      subtitle: 'Manage your entire fleet, contracts, and customer lifecycle automatically. No more manual follow-ups on returns.',
+      services: [
+        { name: 'Fleet Availability Chatbot', desc: 'Customer asks about car types, rates, availability → bot shows options with prices → customer selects → details captured automatically for reservation team.', price: 'Request a Quote' },
+        { name: 'Automatic Contract Generation', desc: 'Booking confirmed → system generates PDF rental contract with all details (customer info, car, dates, rate, terms) → sent to customer for review before pickup.', price: 'Request a Quote' },
+        { name: 'Return Reminders', desc: 'WhatsApp sent 24h and 3h before return due. If car not returned on time → automatic escalation alert to manager. Eliminates late returns by 70%.', price: 'Request a Quote' },
+        { name: 'Fleet Daily Report', desc: 'Every morning: vehicles currently rented, available fleet, cars due for return today, overdue returns, maintenance due → WhatsApp to manager.', price: 'Request a Quote' },
+        { name: 'Lead Capture from Website', desc: 'Website visitor fills inquiry form → instant WhatsApp notification to sales team + automatic reply to customer confirming receipt and expected callback time.', price: 'Request a Quote' },
+      ],
+      examples: [
+        { label: 'CAR INQUIRY', msg: '📱 Customer: "I need an SUV for 5 days starting tomorrow."\n🤖 Bot: "Available SUVs: Toyota RAV4 (250 QAR/day = 1,250 QAR) or Kia Sportage (230 QAR/day = 1,150 QAR). Includes full insurance, unlimited km, free airport delivery. Which do you prefer? Contract ready in minutes."' },
+        { label: 'RETURN REMINDER', msg: '📱 Bot (3h before): "Reminder: Your Toyota RAV4 is due for return today at 6:00 PM. Drop it at our C-Ring Road location. Need an extension? Reply YES and we will arrange it before the deadline."' },
+        { label: 'CONTRACT SENT', msg: '📱 Bot (auto): "Your rental agreement is ready! Please review and confirm: Toyota RAV4, 5 days, 1,250 QAR total. Documents required: Qatar ID + valid driving license. Collection at 9AM tomorrow at our office."' },
+      ],
+      benefits: ['Customers get instant availability and pricing — no waiting', 'Zero late returns with smart automated reminders', 'Contracts generated and sent in minutes not hours', 'Manager has complete fleet visibility every morning', 'Every website lead captured and responded to instantly'],
+    },
+    ar: {
+      title: 'شركات تأجير السيارات',
+      subtitle: 'أدر أسطولك بالكامل والعقود ودورة حياة العميل تلقائياً. لا مزيد من المتابعة اليدوية للإرجاع.',
+      services: [
+        { name: 'شات بوت توفر الأسطول', desc: 'العميل يسأل عن أنواع السيارات والأسعار والتوفر ← البوت يعرض الخيارات مع الأسعار ← العميل يختار ← تُسجل البيانات تلقائياً لفريق الحجوزات.', price: 'احصل على عرض مخصص' },
+        { name: 'توليد العقود التلقائي', desc: 'تأكيد الحجز ← النظام يولد عقد إيجار PDF بجميع التفاصيل (بيانات العميل، السيارة، التواريخ، السعر، الشروط) ← يُرسل للعميل للمراجعة قبل الاستلام.', price: 'احصل على عرض مخصص' },
+        { name: 'تذكيرات الإرجاع', desc: 'واتساب يُرسل قبل 24 ساعة و3 ساعات من موعد الإرجاع. إذا لم تُرجع السيارة في الوقت ← تنبيه تصعيد تلقائي للمدير. يقضي على التأخيرات بنسبة 70%.', price: 'احصل على عرض مخصص' },
+        { name: 'تقرير الأسطول اليومي', desc: 'كل صباح: السيارات المؤجرة حالياً، الأسطول المتاح، السيارات المقررة إرجاعها اليوم، التأخيرات، الصيانة المستحقة ← واتساب للمدير.', price: 'احصل على عرض مخصص' },
+        { name: 'التقاط العملاء من الموقع', desc: 'زائر الموقع يملأ نموذج استفسار ← إشعار واتساب فوري لفريق المبيعات + رد تلقائي للعميل يؤكد الاستلام ووقت الاتصال المتوقع.', price: 'احصل على عرض مخصص' },
+      ],
+      examples: [
+        { label: 'استفسار سيارة', msg: '📱 العميل: "أريد SUV لمدة 5 أيام اعتباراً من الغد."\n🤖 البوت: "المتاح: Toyota RAV4 (250 ريال/يوم = 1,250 ريال) أو Kia Sportage (230 ريال/يوم = 1,150 ريال). يشمل تأمين كامل، كيلومترات غير محدودة، توصيل مجاني. أيها تفضل؟ العقد جاهز في دقائق."' },
+        { label: 'تذكير الإرجاع', msg: '📱 البوت (قبل 3 ساعات): "تذكير: Toyota RAV4 موعد إرجاعها اليوم الساعة 6 مساءً في فرعنا بالسي رينج. تحتاج تمديداً؟ رد بـ نعم ونرتب لك قبل الموعد."' },
+        { label: 'العقد جاهز', msg: '📱 البوت (تلقائي): "عقد الإيجار جاهز! يرجى المراجعة: Toyota RAV4، 5 أيام، 1,250 ريال إجمالاً. المطلوب: هوية قطرية + رخصة قيادة سارية. الاستلام الساعة 9 صباحاً في مكتبنا."' },
+      ],
+      benefits: ['العملاء يحصلون على التوفر والأسعار فوراً — بدون انتظار', 'صفر تأخير في الإرجاع مع التذكيرات الذكية التلقائية', 'العقود تُولد وتُرسل في دقائق لا ساعات', 'المدير لديه رؤية كاملة للأسطول كل صباح', 'كل عميل من الموقع يُلتقط ويُرد عليه فوراً'],
+    }
+  },
+
+  realestate: {
+    emoji: '🏗️',
+    en: {
+      title: 'Real Estate & Developers',
+      subtitle: 'Never lose a hot lead again. AI qualifies buyers 24/7, sends property alerts, and keeps prospects warm automatically.',
+      services: [
+        { name: 'Lead Qualification Chatbot', desc: 'Prospect contacts you → bot asks: budget, property type, preferred area, timeline → qualifies the lead → sends hot leads instantly to your sales agent with full profile.', price: 'Request a Quote' },
+        { name: 'Property Availability Alerts', desc: 'New listing added → system automatically notifies all prospects matching that criteria: "New 3BR apartment in The Pearl — 1.2M QAR — matches your search. View details?"', price: 'Request a Quote' },
+        { name: 'Automated Follow-Up Sequences', desc: 'Lead goes cold? System sends follow-up on Day 3, Day 7, Day 14 with different angles (price drop, new listing, market insight) — keeps prospects engaged automatically.', price: 'Request a Quote' },
+        { name: 'Virtual Tour & Brochure Delivery', desc: 'Prospect expresses interest → system instantly sends: 3D virtual tour link, property brochure PDF, floor plans, and nearby amenities map. All personalized to their profile.', price: 'Request a Quote' },
+        { name: 'Weekly Leads Report', desc: 'Every week: number of new leads, qualified vs unqualified, source breakdown, conversion rate, deals in pipeline → sent to sales director on WhatsApp.', price: 'Request a Quote' },
+      ],
+      examples: [
+        { label: 'LEAD QUALIFICATION', msg: '📱 Prospect: "I am looking for a 2-bedroom apartment in Lusail."\n🤖 Bot: "Great choice! Quick questions: What is your budget range? Preferred floor? Need parking? Investment or personal use? I will match you with available options right away 🏠"' },
+        { label: 'PROPERTY ALERT', msg: '📱 Bot (auto): "New listing matching your search! 2BR apartment in Lusail, Floor 8, sea view, 1.15M QAR. Includes: 2 parking, gym, pool. Virtual tour available. Interested? Reply YES for full details and visit booking."' },
+        { label: 'FOLLOW-UP', msg: '📱 Bot (Day 7 follow-up): "Hi! We noticed you viewed the Lusail apartment last week. The developer just announced a 5% discount for this month. Shall I arrange a visit or send updated pricing? Happy to help."' },
+      ],
+      benefits: ['Every lead captured and qualified — even at midnight', 'Sales team focuses only on hot, ready-to-buy prospects', 'Prospects stay engaged with automated follow-ups', 'Faster deal cycles — right info delivered instantly', 'Complete sales pipeline visibility for management'],
+    },
+    ar: {
+      title: 'العقارات والمطورين',
+      subtitle: 'لا تفوت أي عميل جاد مجدداً. الذكاء الاصطناعي يؤهل المشترين 24/7 ويرسل تنبيهات العقارات ويحافظ على اهتمام العملاء تلقائياً.',
+      services: [
+        { name: 'شات بوت تأهيل العملاء', desc: 'العميل المحتمل يتواصل ← البوت يسأل: الميزانية، نوع العقار، المنطقة المفضلة، الجدول الزمني ← يؤهل العميل ← يرسل العملاء الجادين فوراً لوكيل المبيعات مع الملف الكامل.', price: 'احصل على عرض مخصص' },
+        { name: 'تنبيهات توفر العقارات', desc: 'إضافة قائمة جديدة ← النظام يخطر تلقائياً جميع العملاء المتطابقين مع المعايير: "شقة 3 غرف جديدة في اللؤلؤة — 1.2 مليون ريال — تطابق بحثك. عرض التفاصيل؟"', price: 'احصل على عرض مخصص' },
+        { name: 'متابعة العملاء التلقائية', desc: 'برد العميل؟ النظام يرسل متابعة في اليوم 3، اليوم 7، اليوم 14 بزوايا مختلفة (انخفاض سعر، قائمة جديدة، رؤية السوق) — يبقي العملاء مهتمين تلقائياً.', price: 'احصل على عرض مخصص' },
+        { name: 'تسليم الجولة الافتراضية والكتيبات', desc: 'العميل يُبدي اهتماماً ← النظام يرسل فوراً: رابط جولة 3D، كتيب العقار PDF، مخططات الطوابق، وخريطة المرافق القريبة. كل شيء مخصص لملف العميل.', price: 'احصل على عرض مخصص' },
+        { name: 'تقرير العملاء الأسبوعي', desc: 'كل أسبوع: عدد العملاء الجدد، المؤهلين مقابل غير المؤهلين، تحليل المصادر، معدل التحويل، الصفقات في خط الأنابيب ← يُرسل لمدير المبيعات على واتساب.', price: 'احصل على عرض مخصص' },
+      ],
+      examples: [
+        { label: 'تأهيل العميل', msg: '📱 العميل: "أبحث عن شقة غرفتين في لوسيل."\n🤖 البوت: "اختيار ممتاز! أسئلة سريعة: ما ميزانيتك؟ الطابق المفضل؟ تحتاج موقف؟ للاستثمار أم الاستخدام الشخصي؟ سأعرض الخيارات المتاحة فوراً 🏠"' },
+        { label: 'تنبيه عقار جديد', msg: '📱 البوت (تلقائي): "قائمة جديدة تطابق بحثك! شقة 2 غرفة في لوسيل، طابق 8، إطلالة بحرية، 1.15 مليون ريال. تشمل: موقفان، صالة رياضية، مسبح. جولة افتراضية متاحة. هل أنت مهتم؟ رد بـ نعم للتفاصيل."' },
+        { label: 'متابعة تلقائية', msg: '📱 البوت (بعد 7 أيام): "مرحباً! لاحظنا أنك اطلعت على شقة لوسيل الأسبوع الماضي. المطور أعلن خصم 5% هذا الشهر. هل أرتب زيارة أو أرسل الأسعار المحدثة؟"' },
+      ],
+      benefits: ['كل عميل يُلتقط ويُؤهل — حتى منتصف الليل', 'فريق المبيعات يركز فقط على العملاء الجاهزين للشراء', 'العملاء يبقون مهتمين مع المتابعات التلقائية', 'دورات صفقات أسرع — المعلومات الصحيحة تُقدم فوراً', 'رؤية كاملة لخط أنابيب المبيعات للإدارة'],
+    }
+  },
+
+  beauty: {
+    emoji: '💅',
+    en: {
+      title: 'Beauty & Hair Salons',
+      subtitle: 'Automate bookings, loyalty rewards, and client follow-ups. Keep your stylists busy and your clients coming back.',
+      services: [
+        { name: 'WhatsApp Appointment Booking', desc: 'Clients ask about availability, services, and prices — bot shows available slots per stylist and day. Client confirms → automatic booking → reminder 24h and 2h before appointment.', price: 'Request a Quote' },
+        { name: 'Loyalty Program Automation', desc: 'Every visit tracked automatically. 5th visit triggers a free service reward. Birthday month = 20% discount sent automatically. VIP clients get exclusive early access to promotions.', price: 'Request a Quote' },
+        { name: 'Service Menu & Pricing Bot', desc: 'Bot answers instantly: prices, duration, available stylists, photos of results. Clients can browse the full menu and book directly — no phone calls needed.', price: 'Request a Quote' },
+        { name: 'Re-engagement Reminders', desc: 'Color treatment → reminder in 6 weeks. Manicure → reminder in 3 weeks. Keratin → reminder in 3 months. Each message personalized with the client name and service type.', price: 'Request a Quote' },
+        { name: 'Google Review Automation', desc: '2 hours after visit → automatic WhatsApp: "Thank you! Did you enjoy your service? Leave us a review 🌟 [Google link]". Happy clients directed to Google, complaints sent directly to manager.', price: 'Request a Quote' },
+      ],
+      examples: [
+        { label: 'APPOINTMENT BOOKING', msg: '📱 Client: "I want a balayage this Saturday afternoon, is Sarah available?"\n🤖 Bot: "Great choice! Sarah has these slots on Saturday: 1:00 PM, 3:30 PM, and 5:00 PM. Balayage starts from 350 QAR (2-3 hours). Which time works for you? 💇‍♀️"' },
+        { label: 'LOYALTY REWARD', msg: '📱 Bot (auto): "Congratulations Mariam! 🎉 This is your 5th visit at Nour Salon. You have earned 1 FREE service of your choice on your next visit. Valid for 60 days. We cannot wait to see you!"' },
+        { label: 'RE-ENGAGEMENT', msg: '📱 Bot (6 weeks after color): "Hi Nour! 💛 It has been 6 weeks since your last color treatment with us. Your highlights might need a refresh! Book this week and get 15% off your color service. Shall I find you a slot?"' },
+      ],
+      benefits: ['Receptionist freed from repetitive WhatsApp replies all day', 'Zero empty slots — waitlist fills cancellations automatically', 'Clients return more often with personalized reminders', 'Google reviews increase organically with automated requests', 'Owner gets daily salon performance report every evening'],
+    },
+    ar: {
+      title: 'صالونات التجميل والشعر',
+      subtitle: 'أتمت الحجوزات ومكافآت الولاء ومتابعة العملاء. أبقِ فريقك مشغولاً وعميلاتك عائدات.',
+      services: [
+        { name: 'حجز المواعيد على واتساب', desc: 'العميلات يسألن عن المواعيد والخدمات والأسعار — البوت يعرض الأوقات المتاحة لكل مصففة وكل يوم. العميلة تختار ← حجز تلقائي ← تذكير قبل 24 ساعة و2 ساعة من الموعد.', price: 'احصل على عرض مخصص' },
+        { name: 'برنامج الولاء التلقائي', desc: 'كل زيارة تُسجل تلقائياً. الزيارة الخامسة تُطلق مكافأة خدمة مجانية. شهر عيد الميلاد = خصم 20% يُرسل تلقائياً. عميلات VIP يحصلن على وصول مبكر للعروض الحصرية.', price: 'احصل على عرض مخصص' },
+        { name: 'بوت قائمة الخدمات والأسعار', desc: 'البوت يجيب فوراً: الأسعار، المدة، المصففات المتاحة، صور النتائج. العميلات يتصفحن القائمة الكاملة ويحجزن مباشرةً — بدون مكالمات هاتفية.', price: 'احصل على عرض مخصص' },
+        { name: 'تذكيرات الإعادة الشخصية', desc: 'صبغة الشعر ← تذكير بعد 6 أسابيع. مانيكير ← تذكير بعد 3 أسابيع. كيراتين ← تذكير بعد 3 أشهر. كل رسالة مخصصة باسم العميلة ونوع الخدمة.', price: 'احصل على عرض مخصص' },
+        { name: 'أتمتة تقييمات Google', desc: 'بعد ساعتين من الزيارة ← واتساب تلقائي: "شكراً! هل استمتعت بخدمتك؟ اتركي لنا تقييماً 🌟 [رابط Google]". العميلات الراضيات تُوجَّه لـ Google، الشكاوى تُرسل مباشرةً للمديرة.', price: 'احصل على عرض مخصص' },
+      ],
+      examples: [
+        { label: 'حجز موعد', msg: '📱 العميلة: "أريد بالياج السبت بعد الظهر، هل سارة متاحة؟"\n🤖 البوت: "اختيار رائع! سارة لديها هذه الأوقات السبت: 1:00 ظهراً، 3:30 عصراً، و5:00 مساءً. البالياج يبدأ من 350 ريال (2-3 ساعات). أي وقت يناسبك؟ 💇‍♀️"' },
+        { label: 'مكافأة الولاء', msg: '📱 البوت (تلقائي): "مبروك مريم! 🎉 هذه زيارتك الخامسة في صالون نور. حصلت على خدمة مجانية واحدة من اختيارك في زيارتك القادمة. صالحة 60 يوماً. نتطلع لرؤيتك!"' },
+        { label: 'تذكير إعادة الزيارة', msg: '📱 البوت (بعد 6 أسابيع من الصبغة): "مرحباً نور! 💛 مرت 6 أسابيع على آخر صبغة شعر معنا. هايلايتك قد تحتاج تجديداً! احجزي هذا الأسبوع واحصلي على خصم 15% على خدمة اللون. هل أجد لك موعداً؟"' },
+      ],
+      benefits: ['الموظفة تتحرر من الردود المتكررة على واتساب طوال اليوم', 'صفر أوقات فراغ — قائمة الانتظار تملأ الإلغاءات تلقائياً', 'العميلات يعدن أكثر بفضل التذكيرات الشخصية', 'تقييمات Google ترتفع تلقائياً بدون جهد', 'المالكة تحصل على تقرير أداء الصالون كل مساء'],
+    }
+  },
+
+  travel: {
+    emoji: '✈️',
+    en: {
+      title: 'Travel Agencies',
+      subtitle: 'Handle hundreds of travel inquiries, visa questions, and booking follow-ups automatically — in Arabic and English.',
+      services: [
+        { name: 'Instant Quote Chatbot', desc: 'Customer sends: "Istanbul 2 people, Dec 10-17" → bot replies within 60 seconds with flight options, hotel packages, total cost, and visa requirements. Collects contact for follow-up.', price: 'Request a Quote' },
+        { name: 'Visa Requirements Assistant', desc: 'Customer asks: "Do I need a visa for Turkey with a Qatari residence?" → bot answers instantly with exact requirements, documents needed, processing time, and cost — for 50+ countries.', price: 'Request a Quote' },
+        { name: 'Booking Follow-Up & Status', desc: 'Customer sends booking reference → bot replies: "Flight confirmed ✅ | Hotel confirmed ✅ | Visa: In progress (3 days) | Travel insurance: Pending". All in one message.', price: 'Request a Quote' },
+        { name: 'Pre-Trip Reminders Sequence', desc: 'Auto WhatsApp countdown: D-7 (documents checklist), D-3 (online check-in open), D-1 (departure details, terminal, check-in time), D+2 after return (feedback request).', price: 'Request a Quote' },
+        { name: 'Flash Deals Broadcast', desc: 'Agency receives promo → 1 click sends WhatsApp to all interested clients: "🔥 Flash deal: Doha→Istanbul round trip 1,200 QAR — valid 48h only!" Sorted by destination interest.', price: 'Request a Quote' },
+      ],
+      examples: [
+        { label: 'PACKAGE INQUIRY', msg: '📱 Customer: "Turkey next month, family of 4."\n🤖 Bot: "Great! Estimated for 4 people: Flights ~2,800–3,600 QAR/person, 4-star hotel 7 nights ~280–380 QAR/night. No visa needed for Qatari passport. Full package: ~18,000–22,000 QAR. Preferred dates?"' },
+        { label: 'VISA QUESTION', msg: '📱 Customer: "Do I need a visa for UK? I have Qatari residence."\n🤖 Bot: "Yes, UK requires a visa for Qatar residence holders. Requirements: bank statement, hotel booking, return flight, employment letter. Processing: 7-14 working days. Shall I start your application?"' },
+        { label: 'PRE-TRIP REMINDER', msg: '📱 Bot (7 days before): "Your Istanbul trip is in 7 days! Checklist: Valid passport ✓, Travel insurance ✓, Hotel confirmed ✓. Online check-in opens in 4 days. Need airport transfer in Istanbul? Let us know!"' },
+      ],
+      benefits: ['Answers 80% of customer inquiries without agent involvement', 'Instant visa information for 50+ countries 24/7', 'Flash deals reach all interested clients in seconds', 'No missed leads — every inquiry captured and followed up', 'Customers arrive prepared with automated pre-trip checklists'],
+    },
+    ar: {
+      title: 'وكالات السفر',
+      subtitle: 'تعامل مع مئات استفسارات السفر وأسئلة الفيزا ومتابعات الحجوزات تلقائياً — بالعربية والإنجليزية.',
+      services: [
+        { name: 'شات بوت العروض الفورية', desc: 'العميل يرسل: "إسطنبول شخصان، 10-17 ديسمبر" ← البوت يرد خلال 60 ثانية مع خيارات الطيران وباقات الفنادق والتكلفة الإجمالية ومتطلبات الفيزا. يجمع جهة الاتصال للمتابعة.', price: 'احصل على عرض مخصص' },
+        { name: 'مساعد متطلبات الفيزا', desc: 'العميل يسأل: "هل أحتاج فيزا لتركيا بإقامة قطرية؟" ← البوت يجيب فوراً بالمتطلبات الدقيقة والوثائق المطلوبة ووقت المعالجة والتكلفة — لأكثر من 50 دولة.', price: 'احصل على عرض مخصص' },
+        { name: 'متابعة الحجز والحالة', desc: 'العميل يرسل رقم الحجز ← البوت يرد: "الطيران مؤكد ✅ | الفندق مؤكد ✅ | الفيزا: قيد المعالجة (3 أيام) | تأمين السفر: معلق". كل شيء في رسالة واحدة.', price: 'احصل على عرض مخصص' },
+        { name: 'تذكيرات ما قبل الرحلة', desc: 'واتساب تلقائي: ق-7 (قائمة الوثائق)، ق-3 (تسجيل الوصول الإلكتروني متاح)، ق-1 (تفاصيل المغادرة، الصالة، وقت تسجيل الوصول)، ب+2 بعد العودة (طلب التغذية الراجعة).', price: 'احصل على عرض مخصص' },
+        { name: 'بث العروض الفلاشية', desc: 'الوكالة تستلم عرضاً ← نقرة واحدة ترسل واتساب لجميع العملاء المهتمين: "🔥 عرض فلاش: الدوحة←إسطنبول ذهاباً وإياباً 1,200 ريال — صالح 48 ساعة فقط!" مصنفون حسب اهتمام الوجهة.', price: 'احصل على عرض مخصص' },
+      ],
+      examples: [
+        { label: 'استفسار باقة', msg: '📱 العميل: "تركيا الشهر القادم، عائلة 4 أشخاص."\n🤖 البوت: "وجهة رائعة! تقدير لـ 4 أشخاص: طيران ~2,800–3,600 ريال/شخص، فندق 4 نجوم 7 ليالٍ ~280–380 ريال/ليلة. لا فيزا للجواز القطري. الباقة الكاملة: ~18,000–22,000 ريال. ما التواريخ المفضلة؟"' },
+        { label: 'سؤال فيزا', msg: '📱 العميل: "هل أحتاج فيزا للمملكة المتحدة؟ لدي إقامة قطرية."\n🤖 البوت: "نعم، المملكة المتحدة تتطلب فيزا لحاملي الإقامة القطرية. المطلوب: كشف حساب، حجز فندق، تذكرة عودة، خطاب عمل. المعالجة: 7-14 يوم عمل. هل نبدأ طلبك؟"' },
+        { label: 'تذكير ما قبل الرحلة', msg: '📱 البوت (قبل 7 أيام): "رحلتك إلى إسطنبول بعد 7 أيام! قائمة التحقق: جواز سفر ساري ✓، تأمين سفر ✓، فندق مؤكد ✓. تسجيل الوصول الإلكتروني يفتح بعد 4 أيام. تحتاج نقل في إسطنبول؟ أخبرنا!"' },
+      ],
+      benefits: ['يجيب على 80% من استفسارات العملاء بدون تدخل موظف', 'معلومات فيزا فورية لأكثر من 50 دولة 24/7', 'العروض الفلاشية تصل لجميع العملاء المهتمين في ثوانٍ', 'لا يفوت أي عميل — كل استفسار يُلتقط ويُتابع', 'العملاء يصلون مستعدين مع قوائم التحقق التلقائية'],
+    }
+  }
+};
+
+// ── ADMIN EXAMPLES ──
+const adminExamples = {
+  restaurant: {
+    en: [
+      { label: 'INVOICE AUTO-SENT', msg: '📧 System (auto): "Invoice #2847 has been generated for your event booking (Friday, 45 guests). Total: 4,500 QAR. PDF attached. Payment due: 7 days. Account details included."' },
+      { label: 'STOCK ALERT', msg: '⚠️ System → Manager WhatsApp: "LOW STOCK ALERT: Lamb (3kg remaining — min: 10kg), Olive Oil (1 bottle — min: 5). Supplier order sent automatically to Al Noor Trading. Expected delivery: tomorrow."' },
+      { label: 'DAILY REPORT', msg: '📊 8:00 AM → Manager: "Yesterday summary: Revenue 8,450 QAR (+12% vs last week). Top dish: Machboos Laham (47 orders). Stock critical: 3 items. Pending reservations today: 4."' },
+    ],
+    ar: [
+      { label: 'فاتورة تلقائية', msg: '📧 النظام (تلقائي): \"تم إنشاء فاتورة #2847 لحجز الفعالية (الجمعة، 45 ضيف). الإجمالي: 4,500 ريال. PDF مرفق. الدفع خلال 7 أيام. تفاصيل الحساب مشمولة.\"' },
+      { label: 'تنبيه مخزون منخفض', msg: '⚠️ النظام ← واتساب المدير: \"تنبيه مخزون منخفض: لحم (3 كيلو متبقية — الحد الأدنى 10 كيلو)، زيت زيتون (زجاجة واحدة — الحد الأدنى 5). تم إرسال طلب للمورد تلقائياً. التسليم المتوقع: غداً.\"' },
+      { label: 'التقرير اليومي', msg: '📊 8:00 صباحاً ← المدير: \"ملخص أمس: إيرادات 8,450 ريال (+12% مقارنة بالأسبوع الماضي). الطبق الأكثر مبيعاً: مجبوس لحم (47 طلب). مواد حرجة: 3. حجوزات اليوم المعلقة: 4.\"' },
+    ]
+  },
+  hotel: {
+    en: [
+      { label: 'CHECKOUT FOLIO', msg: '📧 System → Guest email: "Thank you for staying at The Pearl Suites! Your invoice is attached. Total: 1,520 QAR (4 nights + breakfast + spa). We hope to welcome you back soon!"' },
+      { label: 'MAINTENANCE TICKET', msg: '🔧 System → Maintenance team: "TICKET #441 — Room 304: AC not cooling. Reported: 2:15 PM. Priority: HIGH. Assigned to: Hassan (HVAC). Guest notified: alternative room offered. Status: In progress."' },
+      { label: 'REVENUE REPORT', msg: '📊 GM WhatsApp 8AM: "Daily Report: Occupancy 87% (52/60 rooms). RevPAR: 331 QAR. Arrivals today: 8. Departures: 5. VIP guests: 2 (Room 401, 508). Pending maintenance: 1 ticket."' },
+    ],
+    ar: [
+      { label: 'فاتورة المغادرة', msg: '📧 النظام ← بريد الضيف: \"شكراً لإقامتك في Pearl Suites! الفاتورة مرفقة. الإجمالي: 1,520 ريال (4 ليالٍ + إفطار + سبا). نأمل أن نستقبلك مجدداً قريباً!\"' },
+      { label: 'تذكرة صيانة', msg: '🔧 النظام ← فريق الصيانة: \"تذكرة #441 — غرفة 304: التكييف لا يبرد. الإبلاغ: 2:15 ظهراً. الأولوية: عالية. المسؤول: حسن (HVAC). تم إخطار الضيف: عرضت غرفة بديلة. الحالة: جارٍ المعالجة.\"' },
+      { label: 'تقرير الإيرادات', msg: '📊 واتساب المدير 8ص: \"التقرير اليومي: إشغال 87% (52/60 غرفة). RevPAR: 331 ريال. وصول اليوم: 8. مغادرة: 5. ضيوف VIP: 2 (غرفة 401، 508). صيانة معلقة: تذكرة واحدة.\"' },
+    ]
+  },
+  clinic: {
+    en: [
+      { label: 'INSURANCE PRE-AUTH', msg: '📧 System → Insurer (auto): "Pre-authorization request for Patient: Ahmed Al Rashidi. Procedure: Dermatology consultation + patch test. Doctor: Dr. Layla Hassan. Date: 15/06/2025. Insurance ID: DAMAN-4471882."' },
+      { label: 'LAB RESULTS DELIVERED', msg: '📧 System → Patient: "Your lab results are ready (Blood panel + CBC). Results PDF attached securely. Dr. Ahmed recommends a follow-up. Book your 15-min consultation: [link]. Normal results noted in your file."' },
+      { label: 'MONTHLY BILLING', msg: '📊 System → Accountant: "June Billing Summary: 284 consultations (42,600 QAR), 67 lab tests (13,400 QAR), 12 procedures (8,800 QAR). Outstanding insurance claims: 18 (14,200 QAR). Excel report attached."' },
+    ],
+    ar: [
+      { label: 'موافقة مسبقة للتأمين', msg: '📧 النظام ← شركة التأمين (تلقائي): \"طلب موافقة مسبقة للمريض: أحمد الرشيدي. الإجراء: كشف جلدية + اختبار تحسس. الطبيب: د. ليلى حسن. التاريخ: 15/06/2025. رقم التأمين: DAMAN-4471882.\"' },
+      { label: 'تسليم نتائج الفحوصات', msg: '📧 النظام ← المريض: \"نتائج فحوصاتك جاهزة (تحليل دم + CBC). PDF النتائج مرفق بأمان. د. أحمد يوصي بمتابعة. احجز استشارة 15 دقيقة: [رابط]. النتائج الطبيعية مسجلة في ملفك.\"' },
+      { label: 'الفوترة الشهرية', msg: '📊 النظام ← المحاسب: \"ملخص فواتير يونيو: 284 كشف (42,600 ريال)، 67 فحص مختبر (13,400 ريال)، 12 إجراء (8,800 ريال). مطالبات تأمين معلقة: 18 (14,200 ريال). تقرير Excel مرفق.\"' },
+    ]
+  },
+  rental: {
+    en: [
+      { label: 'CONTRACT GENERATED', msg: '📧 System → Client: "Your rental agreement is ready! Toyota Land Cruiser, 7 days, 3,150 QAR total. Please sign digitally using the link below. Bring Qatar ID + license on pickup day. Collection: tomorrow 9AM."' },
+      { label: 'MAINTENANCE ALERT', msg: '🔧 System → Manager: "MAINTENANCE DUE: Toyota Camry (Plate: QA-4421) has reached 5,000km service interval. Current mileage: 47,832 km. Currently available. Schedule service this week to avoid rental conflicts."' },
+      { label: 'LATE RETURN ALERT', msg: '⚠️ System → Manager: "OVERDUE RETURN: Nissan Patrol (Client: Mohammed Al Sayed, +974 55X XXX) was due at 5PM — now 2h overdue. Automatic reminder sent to client. Awaiting response. Next rental booked at 9AM tomorrow."' },
+    ],
+    ar: [
+      { label: 'العقد جاهز', msg: '📧 النظام ← العميل: \"عقد الإيجار جاهز! Toyota Land Cruiser، 7 أيام، 3,150 ريال إجمالاً. وقّع رقمياً عبر الرابط أدناه. أحضر الهوية القطرية + الرخصة يوم الاستلام. الاستلام: غداً 9 صباحاً.\"' },
+      { label: 'تنبيه صيانة', msg: '🔧 النظام ← المدير: \"صيانة مستحقة: Toyota Camry (لوحة: QA-4421) وصل لـ 5,000 كم صيانة دورية. العداد الحالي: 47,832 كم. متاحة حالياً. جدول الصيانة هذا الأسبوع لتفادي تعارض الإيجارات.\"' },
+      { label: 'تنبيه تأخر إرجاع', msg: '⚠️ النظام ← المدير: \"تأخر في الإرجاع: Nissan Patrol (العميل: محمد السيد، +974 55X XXX) موعد إرجاعها 5 مساءً — تأخرت ساعتان. تم إرسال تذكير تلقائي للعميل. في انتظار الرد. الإيجار التالي محجوز 9 صباح الغد.\"' },
+    ]
+  },
+  import: {
+    en: [
+      { label: 'PURCHASE ORDER SENT', msg: '📧 System → Supplier (auto): "Purchase Order #PO-2847 from Gulf Fresh Trading. Items: Olive Oil 5L x200 units, Pasta 500g x500 boxes, Canned Tomatoes x300 cases. Delivery: within 10 days. Please confirm receipt."' },
+      { label: 'EXPIRY ALERT', msg: '⚠️ System → Manager: "EXPIRY ALERT: Canned Tuna (Brand: Porto) — 85 units expiring in 14 days (15/06/2025). Action required: discount promotion or supplier return. Allocated storage: Shelf B-12."' },
+      { label: 'PROFIT REPORT', msg: '📊 System → Owner (weekly): "Week 22 Margin Report: Olive Oil: cost 32 QAR → sold 45 QAR (+40.6%). Pasta: cost 4.2 QAR → sold 6 QAR (+42.9%). Rice: cost 95 QAR → sold 140 QAR (+47.4%). Excel attached."' },
+    ],
+    ar: [
+      { label: 'إرسال أمر الشراء', msg: '📧 النظام ← المورد (تلقائي): \"أمر شراء #PO-2847 من شركة الخليج للتجارة الغذائية. البنود: زيت زيتون 5 لتر x200 وحدة، معكرونة 500 جرام x500 علبة، طماطم معلبة x300 كرتون. التسليم: خلال 10 أيام. يرجى التأكيد.\"' },
+      { label: 'تنبيه انتهاء الصلاحية', msg: '⚠️ النظام ← المدير: \"تنبيه صلاحية: تونة معلبة (ماركة: Porto) — 85 وحدة تنتهي خلال 14 يوماً (15/06/2025). الإجراء المطلوب: عرض تخفيض أو إرجاع للمورد. التخزين: رف B-12.\"' },
+      { label: 'تقرير هامش الربح', msg: '📊 النظام ← المالك (أسبوعي): \"تقرير الهامش الأسبوع 22: زيت الزيتون: تكلفة 32 ← بيع 45 (+40.6%). معكرونة: تكلفة 4.2 ← بيع 6 (+42.9%). أرز: تكلفة 95 ← بيع 140 (+47.4%). Excel مرفق.\"' },
+    ]
+  },
+  realestate: {
+    en: [
+      { label: 'CONTRACT DRAFTED', msg: '📧 System → Sales Agent: "MOU Draft ready for: Ahmed Al Kuwari — 2BR Lusail apartment, 1.15M QAR. All details pre-filled. Please review and send to client for signature. Deadline: 48 hours per agency policy."' },
+      { label: 'DOCUMENT EXPIRY', msg: '⚠️ System → Manager: "DOCUMENT EXPIRY in 30 days: Tenant Mohammed Saad (Unit 4B) — Qatar ID expires 01/07/2025, Lease expires 15/07/2025. Action needed: renewal request + lease extension letter prepared."' },
+      { label: 'PORTFOLIO REPORT', msg: '📊 System → Director (monthly): "May Portfolio: 18 units occupied (90%), 2 vacant. Rent collected: 127,500 QAR. Arrears: 2 units (8,500 QAR). Maintenance costs: 3,200 QAR. Net: 115,800 QAR. Full Excel attached."' },
+    ],
+    ar: [
+      { label: 'مسودة العقد جاهزة', msg: '📧 النظام ← وكيل المبيعات: \"مسودة مذكرة التفاهم جاهزة لـ: أحمد الكواري — شقة 2 غرفة لوسيل، 1.15 مليون ريال. جميع التفاصيل مملوءة مسبقاً. يرجى المراجعة وإرسالها للعميل للتوقيع. الموعد النهائي: 48 ساعة.\"' },
+      { label: 'تنبيه انتهاء وثيقة', msg: '⚠️ النظام ← المدير: \"انتهاء وثيقة خلال 30 يوماً: المستأجر محمد سعد (وحدة 4B) — الهوية القطرية تنتهي 01/07/2025، العقد ينتهي 15/07/2025. الإجراء: طلب تجديد + خطاب تمديد الإيجار جاهز.\"' },
+      { label: 'تقرير المحفظة', msg: '📊 النظام ← المدير (شهري): \"محفظة مايو: 18 وحدة مشغولة (90%)، 2 شاغرة. إيجار محصل: 127,500 ريال. متأخرات: وحدتان (8,500 ريال). تكاليف صيانة: 3,200 ريال. الصافي: 115,800 ريال. Excel كامل مرفق.\"' },
+    ]
+  },
+
+
+  beauty: {
+    en: [
+      { label: 'BOOKING CONFIRMED', msg: '📧 System → Client: "Your appointment at Nour Salon is confirmed! Service: Balayage with Sarah. Date: Saturday 15 June, 3:30 PM. Address: Al Waab Street, near Villaggio. Need to reschedule? Reply to this message."' },
+      { label: 'DAILY REPORT', msg: '📊 System → Owner (8PM): "Today summary: 14 appointments completed, 2 no-shows, 1 cancellation. Revenue: 3,850 QAR. Top stylist: Sarah (6 clients, 1,620 QAR). Tomorrow: 11 bookings confirmed. Stock alert: Olaplex shampoo low."' },
+      { label: 'BIRTHDAY CAMPAIGN', msg: '📱 Bot (3 days before birthday): "Happy early birthday Hessa! 🎂 As a gift from Nour Salon, enjoy 20% OFF any service during your birthday month. Valid all of June. Book your special treatment: reply BOOK and we will arrange everything 💅"' },
+    ],
+    ar: [
+      { label: 'تأكيد الحجز', msg: '📧 النظام ← العميلة: "موعدك في صالون نور مؤكد! الخدمة: بالياج مع سارة. التاريخ: السبت 15 يونيو، 3:30 عصراً. العنوان: شارع الواعب، قرب فيلاجيو. تريدين إعادة الجدولة؟ ردي على هذه الرسالة."' },
+      { label: 'التقرير اليومي', msg: '📊 النظام ← المالكة (8 مساءً): "ملخص اليوم: 14 موعد مكتمل، 2 غياب، 1 إلغاء. الإيرادات: 3,850 ريال. أفضل مصففة: سارة (6 عميلات، 1,620 ريال). الغد: 11 حجز مؤكد. تنبيه مخزون: شامبو أولابليكس منخفض."' },
+      { label: 'حملة عيد الميلاد', msg: '📱 البوت (قبل 3 أيام من عيد الميلاد): "عيد ميلاد سعيد مسبقاً حصة! 🎂 هدية من صالون نور: استمتعي بخصم 20% على أي خدمة طوال شهر ميلادك. صالح طول يونيو. احجزي معالجتك الخاصة: ردي بـ احجزي وسنرتب كل شيء 💅"' },
+    ]
+  },
+
+  travel: {
+    en: [
+      { label: 'ITINERARY GENERATED', msg: '📧 System → Client: "Your Istanbul itinerary is ready! 7 nights, family of 4. Flights: QR501 (09:45 → 14:30), QR502 return. Hotel: Grand Pera 4★ (breakfast included). Transfer: included both ways. Full PDF attached."' },
+      { label: 'VISA STATUS UPDATE', msg: '📧 System → Client: "VISA UPDATE — UK Tourist Visa for Ahmed Al Rashidi: Application submitted ✅, Biometrics scheduled: 20/06, Decision expected: 5-7 working days. We will notify you immediately upon decision."' },
+      { label: 'PASSPORT EXPIRY ALERT', msg: '⚠️ System → Agent: "PASSPORT CHECK: 3 clients travelling in the next 90 days have passports expiring within 6 months: 1) Fatima Al Kuwari (Turkey trip, expires Sept), 2) Omar Bin Saad (UK trip, expires Aug). Action needed."' },
+    ],
+    ar: [
+      { label: 'برنامج الرحلة جاهز', msg: '📧 النظام ← العميل: \"برنامج رحلتك إلى إسطنبول جاهز! 7 ليالٍ، عائلة 4 أشخاص. الرحلات: QR501 (9:45 → 14:30)، QR502 عودة. الفندق: Grand Pera 4★ (إفطار مشمول). نقل: مشمول ذهاباً وإياباً. PDF كامل مرفق.\"' },
+      { label: 'تحديث حالة الفيزا', msg: '📧 النظام ← العميل: \"تحديث الفيزا — فيزا سياحية للمملكة المتحدة لأحمد الرشيدي: الطلب مقدم ✅، مواعيد بصمات: 20/06، القرار المتوقع: 5-7 أيام عمل. سنخطرك فور صدور القرار.\"' },
+      { label: 'تنبيه انتهاء الجواز', msg: '⚠️ النظام ← الوكيل: \"فحص الجوازات: 3 عملاء مسافرون خلال 90 يوماً وجوازاتهم تنتهي خلال 6 أشهر: 1) فاطمة الكواري (رحلة تركيا، تنتهي سبتمبر)، 2) عمر بن سعد (رحلة UK، تنتهي أغسطس). إجراء مطلوب.\"' },
+    ]
+  }
+};
+
+const adminAutomations = {
+  restaurant: {
+    en: [
+      { name: "Auto-invoicing & receipts", desc: "PDF invoice generated and emailed to client after every order or event booking.", tool: "n8n + PDF" },
+      { name: "Inventory tracking", desc: "Google Sheets updated after each order; alert when ingredient stock falls below threshold.", tool: "n8n + Sheets" },
+      { name: "Social media auto-post", desc: "Daily special posted to Instagram/Facebook automatically each morning.", tool: "n8n + Meta API" },
+      { name: "Supplier order emails", desc: "Weekly purchase order sent to suppliers based on consumed stock data.", tool: "n8n + Gmail" },
+      { name: "Google review auto-reply", desc: "New review detected → AI generates professional reply → posted automatically.", tool: "n8n + Claude" },
+      { name: "End-of-day sales report", desc: "Total sales, top dishes, voids, and discounts compiled and emailed to owner nightly.", tool: "n8n + Sheets" },
+      { name: "Payroll summary", desc: "Weekly hours compiled from shifts and sent to accountant automatically.", tool: "n8n + Sheets" },
+    ],
+    ar: [
+      { name: "إصدار الفواتير التلقائي", desc: "فاتورة PDF تُنشأ وتُرسل للعميل بعد كل طلب أو حجز فعالية.", tool: "n8n + PDF" },
+      { name: "تتبع المخزون", desc: "تحديث Google Sheets بعد كل طلب؛ تنبيه عند انخفاض مخزون المكونات.", tool: "n8n + Sheets" },
+      { name: "نشر تلقائي على السوشال ميديا", desc: "طبق اليوم ينشر تلقائياً على Instagram/Facebook كل صباح.", tool: "n8n + Meta API" },
+      { name: "طلبات الموردين التلقائية", desc: "أمر شراء أسبوعي يُرسل للموردين بناءً على بيانات المخزون المستهلك.", tool: "n8n + Gmail" },
+      { name: "الرد التلقائي على التقييمات", desc: "تقييم جديد ← الذكاء الاصطناعي يُنشئ رداً احترافياً ← يُنشر تلقائياً.", tool: "n8n + Claude" },
+      { name: "تقرير المبيعات اليومي", desc: "إجمالي المبيعات والأطباق الأكثر مبيعاً والخصومات تُجمع وتُرسل للمالك يومياً.", tool: "n8n + Sheets" },
+      { name: "ملخص الرواتب", desc: "ساعات العمل الأسبوعية تُجمع وتُرسل للمحاسب تلقائياً.", tool: "n8n + Sheets" },
+    ]
+  },
+  hotel: {
+    en: [
+      { name: "Pre-arrival email", desc: "Email sent 48h before with room info, parking, WiFi, and local tips.", tool: "n8n + Gmail" },
+      { name: "Housekeeping task scheduler", desc: "Room checkout triggers automatic cleaning task assigned to housekeeping staff.", tool: "n8n + Sheets" },
+      { name: "Invoice & folio generation", desc: "Guest checkout triggers PDF folio with all charges sent to guest email instantly.", tool: "n8n + PDF" },
+      { name: "Maintenance ticket automation", desc: "Guest complaint → ticket created → manager notified → status tracked.", tool: "n8n + Sheets" },
+      { name: "Revenue report automation", desc: "Daily occupancy, ADR, RevPAR compiled and emailed to GM every morning.", tool: "n8n + Sheets" },
+      { name: "Review monitoring", desc: "Scrapes TripAdvisor, Google, Booking → alerts for new reviews → AI reply drafted.", tool: "n8n + Claude" },
+      { name: "Staff schedule notifications", desc: "Weekly roster published → each staff member receives their shift by email.", tool: "n8n + Gmail" },
+    ],
+    ar: [
+      { name: "بريد ما قبل الوصول", desc: "بريد يُرسل قبل 48 ساعة مع معلومات الغرفة والموقف و WiFi.", tool: "n8n + Gmail" },
+      { name: "جدولة مهام التنظيف", desc: "تسجيل مغادرة الغرفة ← مهمة تنظيف تلقائية تُسند لفريق التنظيف.", tool: "n8n + Sheets" },
+      { name: "توليد الفاتورة التلقائي", desc: "تسجيل الخروج ← فاتورة PDF بجميع الرسوم تُرسل للضيف فوراً.", tool: "n8n + PDF" },
+      { name: "أتمتة تذاكر الصيانة", desc: "شكوى الضيف ← تذكرة تُنشأ ← المدير يُخطر ← الحالة تُتابع.", tool: "n8n + Sheets" },
+      { name: "تقرير الإيرادات التلقائي", desc: "نسبة الإشغال والإيرادات تُجمع وتُرسل للمدير العام كل صباح.", tool: "n8n + Sheets" },
+      { name: "مراقبة التقييمات", desc: "TripAdvisor وGoogle وBooking تُراقب ← تنبيهات ← ردود بالذكاء الاصطناعي.", tool: "n8n + Claude" },
+      { name: "إشعارات جداول الموظفين", desc: "الجدول الأسبوعي يُنشر ← كل موظف يستلم وردياته بالبريد.", tool: "n8n + Gmail" },
+    ]
+  },
+  clinic: {
+    en: [
+      { name: "Insurance pre-authorization", desc: "Pre-auth request auto-generated and emailed to insurer when appointment booked.", tool: "n8n + Gmail" },
+      { name: "Lab results delivery", desc: "Results PDF automatically emailed to patient and referring doctor when ready.", tool: "n8n + Gmail" },
+      { name: "Monthly billing report", desc: "All consultations, procedures, and payments compiled into Excel monthly.", tool: "n8n + Sheets" },
+      { name: "Doctor calendar sync", desc: "Schedule change auto-syncs across booking system, website, and team calendar.", tool: "n8n + Calendar" },
+      { name: "Prescription follow-up email", desc: "3 days after visit → email reminding patient to take medication and book follow-up.", tool: "n8n + Gmail" },
+      { name: "Patient record auto-update", desc: "Consultation notes trigger update in patient file in Google Sheets.", tool: "n8n + Sheets" },
+      { name: "Staff performance dashboard", desc: "Weekly patient count, wait times, and satisfaction scores compiled per doctor.", tool: "n8n + Sheets" },
+    ],
+    ar: [
+      { name: "الموافقة المسبقة للتأمين", desc: "طلب الموافقة المسبقة يُولد ويُرسل للمؤمن تلقائياً عند الحجز.", tool: "n8n + Gmail" },
+      { name: "تسليم نتائج الفحوصات", desc: "نتائج PDF تُرسل تلقائياً للمريض والطبيب المحول عند الجاهزية.", tool: "n8n + Gmail" },
+      { name: "تقرير الفواتير الشهري", desc: "جميع الكشوفات والإجراءات والمدفوعات تُجمع في Excel شهرياً.", tool: "n8n + Sheets" },
+      { name: "مزامنة تقويم الطبيب", desc: "تغيير الجدول ← مزامنة تلقائية عبر نظام الحجز والموقع والتقويم.", tool: "n8n + Calendar" },
+      { name: "متابعة الوصفة الطبية", desc: "بعد 3 أيام من الزيارة ← بريد يذكّر المريض بالدواء وموعد المتابعة.", tool: "n8n + Gmail" },
+      { name: "تحديث ملف المريض", desc: "ملاحظات الكشف تُحدث ملف المريض في Google Sheets تلقائياً.", tool: "n8n + Sheets" },
+      { name: "لوحة أداء الطاقم", desc: "عدد المرضى الأسبوعي وأوقات الانتظار ودرجات الرضا تُجمع لكل طبيب.", tool: "n8n + Sheets" },
+    ]
+  },
+  rental: {
+    en: [
+      { name: "Auto-contract PDF", desc: "Booking confirmed → rental agreement PDF created with all details → emailed to client.", tool: "n8n + PDF" },
+      { name: "Fleet maintenance scheduler", desc: "Mileage or date threshold reached → service alert assigned to mechanic.", tool: "n8n + Sheets" },
+      { name: "Late return escalation", desc: "Return overdue by 2h → email + internal alert to manager with client details.", tool: "n8n + Gmail" },
+      { name: "Invoice & payment tracking", desc: "Rental closed → invoice generated → payment tracked → reminders if unpaid.", tool: "n8n + Sheets" },
+      { name: "Insurance document check", desc: "Client uploads ID → system checks expiry → flags invalid documents before handover.", tool: "n8n + Drive" },
+      { name: "Monthly revenue report", desc: "Total rentals, revenue per vehicle category, utilization rate compiled monthly.", tool: "n8n + Sheets" },
+      { name: "Daily fleet status sheet", desc: "Rented, available, in maintenance, and overdue vehicles in live Google Sheet.", tool: "n8n + Sheets" },
+    ],
+    ar: [
+      { name: "عقد PDF تلقائي", desc: "تأكيد الحجز ← عقد إيجار PDF بجميع التفاصيل يُرسل للعميل.", tool: "n8n + PDF" },
+      { name: "جدولة صيانة الأسطول", desc: "حد الكيلومترات أو التاريخ ← تنبيه خدمة يُسند للميكانيكي.", tool: "n8n + Sheets" },
+      { name: "تصعيد التأخير في الإرجاع", desc: "تأخر 2 ساعة ← بريد + تنبيه داخلي للمدير مع بيانات العميل.", tool: "n8n + Gmail" },
+      { name: "تتبع الفواتير والمدفوعات", desc: "الإيجار يُغلق ← فاتورة تُنشأ ← المدفوعات تُتابع ← تذكيرات عند التأخر.", tool: "n8n + Sheets" },
+      { name: "فحص وثائق التأمين", desc: "العميل يرفع الهوية ← النظام يتحقق من الصلاحية ← يُعلم بالوثائق غير الصالحة.", tool: "n8n + Drive" },
+      { name: "تقرير الإيرادات الشهري", desc: "إجمالي الإيجارات والإيرادات حسب فئة السيارة ومعدل الاستخدام شهرياً.", tool: "n8n + Sheets" },
+      { name: "جدول حالة الأسطول اليومي", desc: "السيارات المؤجرة والمتاحة وفي الصيانة والمتأخرة في Google Sheet حي.", tool: "n8n + Sheets" },
+    ]
+  },
+  import: {
+    en: [
+      { name: "Purchase order automation", desc: "Stock hits minimum → PO auto-generated in correct format → emailed to supplier.", tool: "n8n + Gmail" },
+      { name: "Invoice matching", desc: "Supplier invoice received → matched against PO → discrepancies flagged automatically.", tool: "n8n + Sheets" },
+      { name: "Customs document prep", desc: "New shipment → packing list and commercial invoice auto-generated in required format.", tool: "n8n + PDF" },
+      { name: "Expiry date tracking", desc: "Products approaching expiry flagged with quantity and days remaining.", tool: "n8n + Sheets" },
+      { name: "Client statement automation", desc: "Monthly outstanding invoices compiled per client and emailed for payment follow-up.", tool: "n8n + Gmail" },
+      { name: "Profit margin report", desc: "Weekly cost vs selling price analysis per product → emailed as Excel file.", tool: "n8n + Sheets" },
+      { name: "Shipment arrival notifications", desc: "Container arrival logged → all relevant clients automatically notified by email.", tool: "n8n + Gmail" },
+    ],
+    ar: [
+      { name: "أتمتة أوامر الشراء", desc: "المخزون ينخفض ← أمر شراء يُولد تلقائياً بالصيغة الصحيحة ← يُرسل للمورد.", tool: "n8n + Gmail" },
+      { name: "مطابقة الفواتير", desc: "فاتورة المورد تُستلم ← تُطابق مع أمر الشراء ← الفروقات تُعلم تلقائياً.", tool: "n8n + Sheets" },
+      { name: "تحضير وثائق الجمارك", desc: "شحنة جديدة ← قائمة التعبئة والفاتورة التجارية تُولد تلقائياً بالصيغة المطلوبة.", tool: "n8n + PDF" },
+      { name: "تتبع تاريخ الصلاحية", desc: "المنتجات التي تقترب من الانتهاء تُعلم مع الكمية والأيام المتبقية.", tool: "n8n + Sheets" },
+      { name: "كشف حساب العملاء التلقائي", desc: "الفواتير المستحقة الشهرية تُجمع لكل عميل وتُرسل للمتابعة.", tool: "n8n + Gmail" },
+      { name: "تقرير هامش الربح", desc: "تحليل أسبوعي للتكلفة مقابل سعر البيع لكل منتج ← يُرسل كـ Excel.", tool: "n8n + Sheets" },
+      { name: "إشعارات وصول الشحنات", desc: "وصول الحاوية ← إشعار تلقائي بالبريد لجميع العملاء المعنيين.", tool: "n8n + Gmail" },
+    ]
+  },
+  realestate: {
+    en: [
+      { name: "Lead scoring automation", desc: "New inquiry scored by budget, timeline, and seriousness → routed to right agent.", tool: "n8n + Sheets" },
+      { name: "Property listing sync", desc: "New listing entered once → auto-published to PropertyFinder, Bayut, and website.", tool: "n8n + API" },
+      { name: "Contract draft generation", desc: "Deal agreed → MOU or sale agreement auto-drafted with all details → sent for review.", tool: "n8n + PDF" },
+      { name: "Commission calculation", desc: "Deal closed → agent commission calculated and added to monthly payroll report.", tool: "n8n + Sheets" },
+      { name: "Document expiry alerts", desc: "Tenant passports, visas, and leases tracked → alerts 30 days before expiry.", tool: "n8n + Sheets" },
+      { name: "Maintenance request tracker", desc: "Tenant submits issue → ticket created → assigned → status updates sent.", tool: "n8n + Sheets" },
+      { name: "Monthly portfolio report", desc: "All properties: occupancy, rent collected, arrears, and maintenance costs compiled.", tool: "n8n + Sheets" },
+    ],
+    ar: [
+      { name: "تسجيل نقاط العملاء", desc: "استفسار جديد ← تقييم حسب الميزانية والجدول الزمني والجدية ← يُحال للوكيل المناسب.", tool: "n8n + Sheets" },
+      { name: "مزامنة قوائم العقارات", desc: "قائمة جديدة تُدخل مرة ← تُنشر تلقائياً على PropertyFinder وBayut والموقع.", tool: "n8n + API" },
+      { name: "توليد مسودة العقد", desc: "اتفاق الصفقة ← مذكرة تفاهم أو عقد بيع يُسودّ تلقائياً ← يُرسل للمراجعة.", tool: "n8n + PDF" },
+      { name: "حساب العمولة", desc: "الصفقة تُغلق ← عمولة الوكيل تُحسب وتُضاف لتقرير الرواتب الشهري.", tool: "n8n + Sheets" },
+      { name: "تنبيهات انتهاء الوثائق", desc: "جوازات المستأجرين والإقامات وعقود الإيجار ← تنبيهات قبل 30 يوماً.", tool: "n8n + Sheets" },
+      { name: "تتبع طلبات الصيانة", desc: "المستأجر يُبلغ ← تذكرة تُنشأ ← تُسند ← تحديثات الحالة تُرسل.", tool: "n8n + Sheets" },
+      { name: "تقرير المحفظة الشهري", desc: "جميع العقارات: الإشغال والإيجار المحصل والمتأخرات وتكاليف الصيانة.", tool: "n8n + Sheets" },
+    ]
+  },
+  travel: {
+    en: [
+      { name: "Itinerary PDF generation", desc: "Trip details entered → full itinerary PDF auto-generated with flights, hotels, transfers.", tool: "n8n + PDF" },
+      { name: "Visa application tracker", desc: "Application submitted → status tracked → client notified at each stage automatically.", tool: "n8n + Sheets" },
+      { name: "Passport expiry check", desc: "Client database scanned → anyone with passport expiring in 6 months flagged.", tool: "n8n + Sheets" },
+      { name: "Supplier payment scheduler", desc: "Booking payment due dates tracked → reminders sent to accounts before deadlines.", tool: "n8n + Gmail" },
+      { name: "Booking confirmation email", desc: "Booking confirmed → professional email with full itinerary PDF sent instantly.", tool: "n8n + Gmail" },
+      { name: "Post-trip review request", desc: "2 days after return → automated email asking for Google review with direct link.", tool: "n8n + Gmail" },
+      { name: "Monthly sales report", desc: "Total bookings, revenue per destination, top agents, and margins compiled for director.", tool: "n8n + Sheets" },
+    ],
+    ar: [
+      { name: "توليد برنامج الرحلة PDF", desc: "تفاصيل الرحلة تُدخل ← برنامج كامل PDF يُولد تلقائياً مع الرحلات والفنادق.", tool: "n8n + PDF" },
+      { name: "متابعة طلب الفيزا", desc: "الطلب يُقدم ← الحالة تُتابع ← العميل يُخطر في كل مرحلة تلقائياً.", tool: "n8n + Sheets" },
+      { name: "فحص انتهاء الجواز", desc: "قاعدة بيانات العملاء تُفحص ← من جوازه ينتهي خلال 6 أشهر يُعلم.", tool: "n8n + Sheets" },
+      { name: "جدولة مدفوعات الموردين", desc: "مواعيد استحقاق المدفوعات تُتابع ← تذكيرات للمحاسبة قبل المواعيد.", tool: "n8n + Gmail" },
+      { name: "بريد تأكيد الحجز", desc: "الحجز يُؤكد ← بريد احترافي مع برنامج الرحلة PDF يُرسل فوراً.", tool: "n8n + Gmail" },
+      { name: "طلب تقييم ما بعد الرحلة", desc: "بعد يومين من العودة ← بريد تلقائي لطلب تقييم Google مع رابط مباشر.", tool: "n8n + Gmail" },
+      { name: "تقرير المبيعات الشهري", desc: "إجمالي الحجوزات والإيرادات حسب الوجهة وأفضل الوكلاء والهوامش.", tool: "n8n + Sheets" },
+    ]
+  }
+,
+
+  beauty: {
+    en: [
+      { name: 'Daily booking report', desc: 'Every evening: appointments, revenue per stylist, cancellations, and tomorrows schedule sent to owner.', tool: 'n8n + Sheets' },
+      { name: 'Auto appointment confirmation', desc: 'Booking confirmed → email sent to client with date, time, stylist, service, and salon address.', tool: 'n8n + Gmail' },
+      { name: 'Stock management', desc: 'Each product used is logged. When stock falls below threshold → automatic order sent to supplier.', tool: 'n8n + Sheets' },
+      { name: 'Staff performance dashboard', desc: 'Weekly: appointments per stylist, revenue generated, average rating, cancellation rate.', tool: 'n8n + Sheets' },
+      { name: 'Monthly revenue report', desc: 'Revenue by service category, top services, best-performing stylist, and client retention rate.', tool: 'n8n + Sheets' },
+      { name: 'Inactive client campaign', desc: 'Clients who have not visited in 45+ days automatically receive a personalized re-engagement offer.', tool: 'n8n + Gmail' },
+      { name: 'Birthday campaign', desc: 'Client birthday approaching → automatic WhatsApp with exclusive birthday discount and booking link.', tool: 'n8n + Gmail' },
+    ],
+    ar: [
+      { name: 'تقرير الحجوزات اليومي', desc: 'كل مساء: إجمالي المواعيد وإيرادات كل مصففة والإلغاءات وجدول الغد يُرسل للمالكة.', tool: 'n8n + Sheets' },
+      { name: 'تأكيد الحجز التلقائي', desc: 'الحجز مؤكد ← بريد احترافي يُرسل للعميلة مع التاريخ والوقت والمصففة والخدمة وعنوان الصالون.', tool: 'n8n + Gmail' },
+      { name: 'إدارة المخزون', desc: 'كل منتج مستخدم يُسجل. عند انخفاض المخزون تحت الحد ← طلب تلقائي يُرسل للمورد.', tool: 'n8n + Sheets' },
+      { name: 'لوحة أداء الفريق', desc: 'أسبوعياً: المواعيد لكل مصففة والإيرادات ومتوسط التقييم ومعدل الإلغاء.', tool: 'n8n + Sheets' },
+      { name: 'تقرير الإيرادات الشهري', desc: 'توزيع الإيرادات حسب فئة الخدمة وأفضل الخدمات والمصففة الأكثر إنتاجاً.', tool: 'n8n + Sheets' },
+      { name: 'حملة إعادة الاستهداف', desc: 'العميلات غير الزائرات منذ 45+ يوماً يستلمن تلقائياً عرضاً شخصياً.', tool: 'n8n + Gmail' },
+      { name: 'حملة أعياد الميلاد', desc: 'اقتراب عيد ميلاد العميلة ← واتساب تلقائي مع خصم حصري ورابط حجز.', tool: 'n8n + Gmail' },
+    ]
+  }
+};
+
+function openSector(id) {
+  const isAr = document.body.classList.contains('arabic');
+  const data = sectorPages[id];
+  const admin = adminAutomations[id] || { en: [], ar: [] };
+  const adminExamplesData = adminExamples[id] || { en: [], ar: [] };
+  if (!data) return;
+  const d = isAr ? data.ar : data.en;
+  const adm = isAr ? admin.ar : admin.en;
+  const admEx = (adminExamplesData && (isAr ? adminExamplesData.ar : adminExamplesData.en)) || [];
+  const dir = isAr ? 'rtl' : 'ltr';
+  const waExamples = d.examples || (d.example ? [d.example] : []);
+
+
+
+  document.getElementById('modalInner').innerHTML = `
+    <div class="modal-header" dir="${dir}">
+      <span class="modal-emoji">${data.emoji}</span>
+      <div class="modal-title">${d.title}</div>
+      <div class="modal-subtitle">${d.subtitle}</div>
+    </div>
+
+    <div style="display:flex; gap:0; border-bottom:1px solid rgba(255,255,255,0.08); background:#161616;" dir="${dir}">
+      <button onclick="switchTab('whatsapp')" id="tab-whatsapp" style="flex:1; padding:14px 8px; font-size:13px; font-weight:600; border:none; cursor:pointer; border-bottom:3px solid #C9A84C; background:rgba(201,168,76,0.08); color:#C9A84C; font-family:inherit; transition:all 0.2s;">
+        💬 ${isAr ? 'شات بوت واتساب' : 'WhatsApp Chatbot'}
+      </button>
+      <button onclick="switchTab('admin')" id="tab-admin" style="flex:1; padding:14px 8px; font-size:13px; font-weight:500; border:none; cursor:pointer; border-bottom:3px solid transparent; background:transparent; color:#666; font-family:inherit; transition:all 0.2s;">
+        ⚙️ ${isAr ? 'الأتمتة الإدارية' : 'Admin Automation'}
+      </button>
+      <button onclick="switchTab('benefits')" id="tab-benefits" style="flex:1; padding:14px 8px; font-size:13px; font-weight:500; border:none; cursor:pointer; border-bottom:3px solid transparent; background:transparent; color:#666; font-family:inherit; transition:all 0.2s;">
+        📊 ${isAr ? 'الفوائد والمثال' : 'Benefits & Example'}
+      </button>
+    </div>
+
+    <div class="modal-body" dir="${dir}">
+
+      <!-- TAB 1: WhatsApp -->
+      <div id="panel-whatsapp">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:20px; padding:14px 16px; background:rgba(201,168,76,0.06); border:1px solid rgba(201,168,76,0.15); border-radius:10px;">
+          <span style="font-size:22px;">💬</span>
+          <div>
+            <div style="font-size:13px; font-weight:600; color:#C9A84C; margin-bottom:3px;">${isAr ? 'أتمتة واتساب' : 'WhatsApp Automation'}</div>
+            <div style="font-size:12px; color:#666;">${isAr ? 'ردود ذكية تلقائية على عملائك 24/7 بالعربية والإنجليزية' : 'Smart automatic replies to your customers 24/7 in Arabic & English'}</div>
+          </div>
+        </div>
+        ${d.services.map((s, i) => `
+          <div style="background:#1a1a1a; border:1px solid #2a2a2a; border-radius:10px; padding:16px 18px; margin-bottom:10px; border-${isAr ? 'right' : 'left'}:3px solid #C9A84C;">
+            <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+              <div style="flex:1; min-width:0;">
+                <div style="font-size:14px; font-weight:600; color:#e8e0cc; margin-bottom:6px;">${i+1}. ${s.name}</div>
+                <div style="font-size:13px; color:#888; line-height:1.6;">${s.desc}</div>
+              </div>
+              <span style="font-size:11px; padding:4px 10px; border-radius:20px; background:rgba(201,168,76,0.1); color:#C9A84C; border:1px solid rgba(201,168,76,0.2); white-space:nowrap; flex-shrink:0;">${isAr ? 'طلب عرض' : 'Get Quote'}</span>
+            </div>
+          </div>
+        `).join('')}
+
+        <div style="margin-top:24px;">
+          <div style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#C9A84C; margin-bottom:14px; padding-bottom:8px; border-bottom:1px solid rgba(201,168,76,0.2);">${isAr ? '3 أمثلة حية — واتساب' : '3 Live Examples — WhatsApp'}</div>
+          ${waExamples.map(ex => `
+            <div style="background:#0f0f0f; border:1px solid #252525; border-radius:10px; padding:16px 18px; margin-bottom:10px;">
+              <div style="font-size:10px; color:#C9A84C; font-weight:700; letter-spacing:1.5px; margin-bottom:8px;">${ex.label}</div>
+              <div style="font-size:12.5px; color:#999; line-height:1.9; white-space:pre-line; font-style:italic;">${ex.msg}</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+
+      <!-- TAB 2: Admin Automation -->
+      <div id="panel-admin" style="display:none;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:20px; padding:14px 16px; background:rgba(76,175,80,0.06); border:1px solid rgba(76,175,80,0.15); border-radius:10px;">
+          <span style="font-size:22px;">⚙️</span>
+          <div>
+            <div style="font-size:13px; font-weight:600; color:#4CAF50; margin-bottom:3px;">${isAr ? 'الأتمتة الإدارية والتشغيلية' : 'Administrative & Operational Automation'}</div>
+            <div style="font-size:12px; color:#666;">${isAr ? 'أنظمة تعمل في الخلفية توفر ساعات من العمل اليدوي يومياً' : 'Background systems that save hours of manual work every day'}</div>
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:10px;">
+          ${adm.map((a, i) => {
+            return `
+            <div style="background:#1a1a1a; border:1px solid #2a2a2a; border-radius:10px; padding:16px 18px;">
+              <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:8px; margin-bottom:8px;">
+                <div style="font-size:13px; font-weight:600; color:#e8e0cc;">${i+1}. ${a.name}</div>
+  
+              </div>
+              <div style="font-size:12px; color:#777; line-height:1.6;">${a.desc}</div>
+            </div>`;
+          }).join('')}
+        </div>
+
+        <div style="margin-top:24px;">
+          <div style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#4CAF50; margin-bottom:14px; padding-bottom:8px; border-bottom:1px solid rgba(76,175,80,0.2);">${isAr ? '3 أمثلة حية — الأتمتة الإدارية' : '3 Live Examples — Admin Automation'}</div>
+          ${admEx.map(ex => `
+            <div style="background:#0a120a; border:1px solid #1a2a1a; border-radius:10px; padding:16px 18px; margin-bottom:10px;">
+              <div style="font-size:10px; color:#4CAF50; font-weight:700; letter-spacing:1.5px; margin-bottom:8px;">${ex.label}</div>
+              <div style="font-size:12.5px; color:#999; line-height:1.9; white-space:pre-line; font-style:italic;">${ex.msg}</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+
+      <!-- TAB 3: Benefits & Example -->
+      <div id="panel-benefits" style="display:none;">
+        <div style="margin-bottom:24px;">
+          <div style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#C9A84C; margin-bottom:14px; padding-bottom:8px; border-bottom:1px solid rgba(201,168,76,0.2);">${isAr ? 'الفوائد الفعلية لعملك' : 'Real Business Benefits'}</div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:10px;">
+            ${d.benefits.map(b => `
+              <div style="background:#1a1a1a; border:1px solid #2a2a2a; border-radius:10px; padding:14px 16px; display:flex; align-items:flex-start; gap:10px;">
+                <span style="color:#C9A84C; font-weight:700; font-size:16px; flex-shrink:0; margin-top:1px;">→</span>
+                <span style="font-size:13px; color:#888; line-height:1.6;">${b}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin-bottom:24px;">
+          <div style="background:#1a1400; border:1px solid rgba(201,168,76,0.2); border-radius:10px; padding:18px 20px; text-align:center;">
+            <div style="font-size:28px; font-weight:700; color:#C9A84C; margin-bottom:4px;">3–5 ${isAr ? 'ساعات' : 'hrs'}</div>
+            <div style="font-size:12px; color:#666;">${isAr ? 'موفرة يومياً من العمل اليدوي' : 'saved daily from manual work'}</div>
+          </div>
+          <div style="background:#0a120a; border:1px solid rgba(76,175,80,0.2); border-radius:10px; padding:18px 20px; text-align:center;">
+            <div style="font-size:28px; font-weight:700; color:#4CAF50; margin-bottom:4px;">24/7</div>
+            <div style="font-size:12px; color:#666;">${isAr ? 'أنظمة تعمل بدون توقف' : 'systems running without stop'}</div>
+          </div>
+          <div style="background:#0a0a1a; border:1px solid rgba(100,100,255,0.2); border-radius:10px; padding:18px 20px; text-align:center;">
+            <div style="font-size:28px; font-weight:700; color:#7c8cf8; margin-bottom:4px;">0</div>
+            <div style="font-size:12px; color:#666;">${isAr ? 'أخطاء يدوية في التقارير' : 'manual errors in reports'}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-cta" style="margin-top:24px;">
+        <p>${isAr ? 'مهتم؟ احصل على استشارة مجانية وديمو مخصص لعملك خلال 24 ساعة.' : 'Interested? Get a free consultation and a custom demo built for your business within 24 hours.'}</p>
+        <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+          <a href="#contact-form" class="btn-primary" onclick="closeModal(); setTimeout(()=>document.getElementById('contact_name').focus(),400);" style="text-decoration:none;">${isAr ? 'أرسل لنا رسالة' : 'Send Us a Message'}</a>
+          <a href="#contact-info" class="btn-secondary" onclick="closeModal();" style="text-decoration:none; display:inline-block;">${isAr ? 'معلومات التواصل' : 'Our Contact Info'}</a>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.getElementById('sectorModal').style.display = 'block';
+  document.body.style.overflow = 'hidden';
+}
+
+function switchTab(tab) {
+  ['whatsapp','admin','benefits'].forEach(t => {
+    const panel = document.getElementById('panel-' + t);
+    const btn = document.getElementById('tab-' + t);
+    if (!panel || !btn) return;
+    if (t === tab) {
+      panel.style.display = 'block';
+      btn.style.borderBottomColor = '#C9A84C';
+      btn.style.background = 'rgba(201,168,76,0.08)';
+      btn.style.color = '#C9A84C';
+      btn.style.fontWeight = '600';
+    } else {
+      panel.style.display = 'none';
+      btn.style.borderBottomColor = 'transparent';
+      btn.style.background = 'transparent';
+      btn.style.color = '#666';
+      btn.style.fontWeight = '500';
+    }
+  });
+}
+
+function closeModal() {
+  document.getElementById('sectorModal').style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+document.getElementById('sectorModal').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeModal();
+});
+function sendEmail() {
+  const isAr = document.body.classList.contains('arabic');
+  const name = document.getElementById('contact_name').value ||
+               document.getElementById('contact_name_ar').value;
+  const contact = document.getElementById('contact_contact').value;
+  const sector = document.getElementById('sectorSelect').value;
+  const message = document.getElementById('contact_message').value ||
+                  document.getElementById('contact_message_ar').value;
+
+  if (!name || !contact || !message) {
+    alert(isAr ? 'يرجى ملء جميع الحقول' : 'Please fill in all fields');
+    return;
+  }
+
+  const btn = document.getElementById('sendEmailBtn') || document.getElementById('sendEmailBtnAr');
+  btn.textContent = isAr ? 'جارٍ الإرسال...' : 'Sending...';
+  btn.disabled = true;
+
+  emailjs.send('smart.managment.solution', 'template_dnpnhth', {
+    from_name: name,
+    from_contact: contact,
+    sector: sector || 'Not specified',
+    message: message
+  }).then(() => {
+    document.getElementById('form-success').style.display = 'block';
+    document.getElementById('form-error').style.display = 'none';
+    btn.textContent = isAr ? 'تم الإرسال ✅' : 'Sent ✅';
+    // Clear fields
+    document.getElementById('contact_name').value = '';
+    document.getElementById('contact_contact').value = '';
+    document.getElementById('contact_message').value = '';
+    document.getElementById('sectorSelect').value = '';
+  }).catch(() => {
+    document.getElementById('form-error').style.display = 'block';
+    document.getElementById('form-success').style.display = 'none';
+    btn.textContent = isAr ? 'إرسال الرسالة' : 'Send Message';
+    btn.disabled = false;
+  });
+}
+
+// Language toggle
+function setLang(lang) {
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector(`.lang-btn:${lang === 'en' ? 'first' : 'last'}-child`).classList.add('active');
+
+  if (lang === 'ar') {
+    document.body.classList.add('arabic');
+    document.querySelectorAll('.ar').forEach(el => el.style.display = 'block');
+    document.querySelectorAll('.en').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.ar-inline').forEach(el => el.style.display = 'inline');
+    document.querySelectorAll('.en-inline').forEach(el => el.style.display = 'none');
+  } else {
+    document.body.classList.remove('arabic');
+    document.querySelectorAll('.ar').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.en').forEach(el => el.style.display = 'block');
+    document.querySelectorAll('.ar-inline').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.en-inline').forEach(el => el.style.display = 'inline');
+  }
+  currentLang = lang;
+}
+
+// Chat
+const GROQ_URL = 'https://api.groq.com/openai/v1/chat/completions';
+const response = await fetch("/api/chat", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    message: userMessage,
+    sector: currentSector
+  }),
+});
+
+const data = await response.json();
+
+const botReply =
+  data.choices?.[0]?.message?.content ||
+  "Sorry, something went wrong.";
+
+addMessage(botReply, "bot");
+
+const sectorContexts = {
+  restaurant: {
+    system: `You are a professional AI assistant for Al Waaha Restaurant, a premium Qatari dining experience in West Bay, Doha.
+
+RESTAURANT INFO:
+- Name: Al Waaha Restaurant (مطعم الواحة)
+- Location: West Bay, Doha, Qatar (Ground floor, Al Waaha Tower)
+- Phone: +974 1234 5678 | Landline: +974 1234 5678
+- Hours: Daily 11:30 AM – 11:30 PM (Ramadan: 8 PM – 2 AM)
+- Cuisine: Authentic Qatari, Gulf Arabic, and international fusion
+
+MENU:
+Starters: Hummus 25 QAR | Mutabbal 22 QAR | Fattoush Salad 28 QAR | Soup of the Day 20 QAR
+Main Courses: Machboos Laham (slow-cooked lamb rice) 75 QAR | Machboos Dajaj (spiced chicken rice) 60 QAR | Harees (wheat & lamb) 50 QAR | Madrouba (creamy fish rice) 65 QAR | Mixed Grill Platter 130 QAR | Grilled Hammour 95 QAR
+Desserts: Luqaimat (honey dumplings) 30 QAR | Umm Ali 28 QAR | Kunafa 35 QAR
+Drinks: Karak Tea 12 QAR | Fresh Juices 22 QAR | Soft drinks 10 QAR
+
+RESERVATIONS: Accept groups 2–30 people. Collect: name, date, time, number of guests, phone number. Private dining room available for events (min 15 guests, requires advance booking).
+
+POLICIES: Valet parking available. Dress code: smart casual. Delivery via Talabat and Careem. 10% service charge applies for groups 8+.
+
+RULES:
+- Always reply in the SAME LANGUAGE the customer uses (Arabic or English)
+- Be warm, professional, and welcoming
+- If asked something you do not know, offer to connect them with the manager
+- Keep responses concise but complete (max 4-5 lines)
+- Use emojis sparingly to keep a professional tone`,
+    quickEn: ["What is on the menu?", "Book a table", "Opening hours?", "Do you deliver?"],
+    quickAr: ["ما هي القائمة؟", "أريد حجز طاولة", "ما هي أوقات العمل؟", "هل يوجد توصيل؟"]
+  },
+
+  hotel: {
+    system: `You are a professional AI concierge for The Pearl Suites Hotel, a 5-star luxury hotel in The Pearl-Qatar, Doha.
+
+HOTEL INFO:
+- Name: The Pearl Suites Hotel
+- Location: Porto Arabia, The Pearl-Qatar, Doha
+- Phone: +974 1234 5678 | Landline: +974 1234 5678
+- Email: reservations@pearlsuites.com.qa
+- Check-in: 3:00 PM | Check-out: 12:00 PM
+
+ROOM TYPES & PRICES:
+- Deluxe Room (1 king bed, sea view): 380 QAR/night
+- Superior Suite (living area + bedroom): 580 QAR/night
+- Executive Suite (lounge access + butler): 850 QAR/night
+- Presidential Suite (full floor, private pool): 2,200 QAR/night
+All rates include: buffet breakfast, WiFi, access to pool & gym
+
+AMENITIES:
+- 2 restaurants (International & Arabic cuisine)
+- Rooftop infinity pool with Pearl Marina views
+- Full spa & wellness center (treatments from 150 QAR)
+- 24-hour fitness center
+- Business center & 3 meeting rooms (capacity 10–80 people)
+- Kids club (ages 3–12)
+- Airport limousine transfer (complimentary for suite guests)
+
+SERVICES:
+- Early check-in / late check-out: subject to availability (100 QAR fee)
+- Room service: 24/7
+- Laundry: same-day service
+- Concierge: tours, restaurant reservations, visa assistance
+
+BOOKING: Collect name, nationality, check-in/out dates, room type, number of guests. Confirm and provide booking reference.
+
+RULES:
+- Always reply in the SAME LANGUAGE the customer uses (Arabic or English)
+- Be elegant, professional, and attentive — luxury hospitality tone
+- Highlight value and exclusivity
+- Keep responses complete but not overwhelming (max 5 lines)`,
+    quickEn: ["Room rates?", "What is included?", "Book a room", "Airport transfer?"],
+    quickAr: ["ما هي أسعار الغرف؟", "ماذا يشمل العرض؟", "أريد الحجز", "هل يوجد نقل من المطار؟"]
+  },
+
+  clinic: {
+    system: `You are a professional AI assistant for Al Shifa Private Clinic, a multi-specialty clinic in Al Waab, Doha, Qatar.
+
+CLINIC INFO:
+- Name: Al Shifa Private Clinic (عيادة الشفاء الخاصة)
+- Location: Al Waab Street, Doha (near Villaggio Mall)
+- Phone: +974 1234 5678 | Landline: +974 1234 5678
+- Emergency: +974 1234 5678
+- Hours: Saturday–Thursday 8:00 AM – 10:00 PM | Friday 2:00 PM – 8:00 PM
+
+SPECIALTIES & DOCTORS:
+- General Medicine: Dr. Ahmed Al Rashidi (Arabic/English) | Dr. Sarah Johnson (English)
+- Pediatrics: Dr. Fatima Al Kuwari | Dr. Michael Chen
+- Dermatology & Cosmetology: Dr. Layla Hassan
+- Cardiology: Dr. Omar Bin Saad (Tues & Thurs only)
+- Orthopedics: Dr. James Williams (Mon, Wed, Sat)
+- Dentistry: Dr. Rania Khalil | Dr. Tom Parker
+- Gynecology: Dr. Amira Al Thani (female patients only)
+- Eye Care: Dr. Hassan Al Marri
+
+CONSULTATION FEES:
+- General Medicine: 150 QAR
+- Specialist: 200–350 QAR
+- Follow-up (within 2 weeks): 75 QAR
+
+INSURANCE: Accepts Daman, Seha, Qatar Insurance, BUPA, AXA, CIGNA, and most major providers. Walk-in patients also welcome.
+
+SERVICES: Lab tests, X-ray, ultrasound, pharmacy (on-site), vaccination, health certificates.
+
+APPOINTMENT BOOKING: Collect patient name, preferred doctor/specialty, date and time preference, phone number, and insurance provider.
+
+RULES:
+- Always reply in the SAME LANGUAGE the customer uses (Arabic or English)
+- Be caring, professional, and reassuring
+- For emergencies, always provide the emergency number immediately
+- Never give specific medical diagnoses — direct to the appropriate doctor
+- Keep responses clear and concise`,
+    quickEn: ["Book appointment", "Which doctors are available?", "Do you accept insurance?", "What are the fees?"],
+    quickAr: ["أريد حجز موعد", "ما التخصصات المتاحة؟", "هل تقبلون التأمين؟", "ما هي رسوم الكشف؟"]
+  },
+
+  rental: {
+    system: `You are a professional AI assistant for Qatar Wheels Car Rental, a premium car rental agency in Doha, Qatar.
+
+COMPANY INFO:
+- Name: Qatar Wheels Car Rental
+- Location: C-Ring Road, Doha (near Hamad International Airport — 5 min)
+- Phone: +974 1234 5678 | Landline: +974 1234 5678
+- Hours: 24/7 (airport desk open round the clock)
+
+FLEET & PRICING (per day, includes insurance & unlimited km):
+Economy: Toyota Yaris / Hyundai Accent — 120 QAR/day
+Sedan: Toyota Camry / Nissan Altima — 180 QAR/day
+SUV Standard: Toyota RAV4 / Kia Sportage — 250 QAR/day
+SUV Premium: Toyota Land Cruiser / Nissan Patrol — 450 QAR/day
+Luxury: BMW 5 Series / Mercedes E-Class — 650 QAR/day
+Van (7-seater): Toyota HiAce — 300 QAR/day
+
+PACKAGES:
+- Weekly discount: 10% off
+- Monthly discount: 20% off
+- Airport pickup/drop: Free for bookings 3+ days
+
+REQUIREMENTS:
+- Valid Qatar ID or passport + driving license
+- International driving permit (for non-GCC licenses)
+- Minimum age: 21 years
+- Security deposit: 500–2,000 QAR (refundable, by card)
+
+DELIVERY: Free delivery anywhere in Doha for bookings 2+ days. Airport delivery available 24/7.
+
+BOOKING: Collect name, car type, pickup date/location, return date, phone number.
+
+RULES:
+- Always reply in the SAME LANGUAGE the customer uses (Arabic or English)
+- Be efficient and direct — customers want quick answers
+- Highlight deals and value
+- Keep responses concise (3–4 lines max)`,
+    quickEn: ["Available cars & prices?", "Airport pickup?", "What documents needed?", "Book a car"],
+    quickAr: ["ما السيارات المتاحة والأسعار؟", "استلام من المطار؟", "ما الوثائق المطلوبة؟", "أريد حجز سيارة"]
+  },
+
+  import: {
+    system: `You are a professional AI assistant for Gulf Fresh Trading Co., a food import and export company based in Industrial Area, Doha, Qatar.
+
+COMPANY INFO:
+- Name: Gulf Fresh Trading Co. (شركة الخليج للتجارة الغذائية)
+- Location: Industrial Area, Street 27, Doha, Qatar
+- Phone: +974 1234 5678 | Landline: +974 1234 5678
+- Hours: Saturday–Thursday 7:30 AM – 6:00 PM
+- Minimum order: 500 QAR
+
+PRODUCT CATALOG:
+Oils & Condiments:
+  - Extra Virgin Olive Oil (Spanish) 5L — 45 QAR | 1L — 12 QAR
+  - Sunflower Oil 5L — 28 QAR
+  - Mixed Spice Packs — from 8 QAR
+
+Grains & Pasta:
+  - Italian Pasta (various shapes) 500g — 6 QAR | box of 20 — 100 QAR
+  - Basmati Rice 5kg — 32 QAR | 25kg — 140 QAR
+  - Flour (all-purpose) 25kg — 55 QAR
+
+Canned & Preserved:
+  - Canned Tomatoes 400g — 4 QAR | case of 24 — 85 QAR
+  - Canned Chickpeas / Lentils — 5 QAR each
+  - Tuna (various brands) — from 7 QAR
+
+Dairy & Frozen:
+  - UHT Milk 1L — 4 QAR | case of 12 — 42 QAR
+  - Cheese blocks (Gouda, Cheddar) — from 38 QAR/kg
+
+Fresh Produce (seasonal):
+  - Vegetables and fruits sourced from Egypt, Jordan, Europe
+
+DELIVERY:
+  - Free delivery in Doha for orders 1,000 QAR+
+  - Same-day delivery for orders before 10 AM
+  - Refrigerated transport available for cold chain items
+
+WHOLESALE: Special pricing for restaurants, hotels, and supermarkets. Contact for bulk quotes.
+
+RULES:
+- Always reply in the SAME LANGUAGE the customer uses (Arabic or English)
+- Be professional and business-focused
+- For large orders, offer to connect with the sales team
+- Provide specific prices and quantities when asked
+- Keep responses informative but concise`,
+    quickEn: ["Product catalog & prices?", "Minimum order?", "Delivery options?", "Wholesale pricing?"],
+    quickAr: ["قائمة المنتجات والأسعار؟", "ما الحد الأدنى للطلب؟", "خيارات التوصيل؟", "أسعار الجملة؟"]
+  },
+
+  beauty: {
+    system: `You are a professional AI assistant for Nour Beauty & Hair Salon, a premium ladies-only salon in Doha, Qatar.
+
+SALON INFO:
+- Name: Nour Beauty & Hair Salon (صالون نور للتجميل)
+- Location: Al Waab Street, Doha (near Villaggio Mall)
+- Phone & Landline: +974 1234 5678
+- Hours: Saturday–Thursday 9:00 AM – 9:00 PM | Friday 2:00 PM – 8:00 PM
+- Ladies only: Yes, strictly ladies-only salon
+
+SERVICES & PRICES:
+Hair Services:
+  - Haircut & Blow-dry: from 80 QAR
+  - Hair Color (full): from 250 QAR
+  - Highlights / Balayage: from 350 QAR
+  - Keratin Treatment: from 400 QAR
+  - Hair Extensions: from 500 QAR
+  - Deep Conditioning Treatment: 120 QAR
+
+Nail Services:
+  - Manicure (classic): 60 QAR
+  - Pedicure (classic): 80 QAR
+  - Gel Nails: 120 QAR
+  - Nail Art (per nail): 10 QAR
+
+Skin & Beauty:
+  - Facial (classic): 150 QAR
+  - Facial (hydrafacial): 350 QAR
+  - Eyebrow threading & tinting: 40 QAR
+  - Waxing (full body): 250 QAR
+  - Makeup (day): 200 QAR | Bridal: from 800 QAR
+
+BOOKING: Ask for: client name, service requested, preferred stylist (if any), preferred date and time, phone number. Confirm slot and send reminder.
+
+STAFF: Sarah (Hair specialist), Lina (Color expert), Fatima (Nail technician), Rania (Skin & makeup artist).
+
+LOYALTY: Every 5 visits = 1 free service. Birthday month = 20% discount on all services.
+
+RULES:
+- Always reply in the SAME LANGUAGE the customer uses (Arabic or English)
+- Be warm, friendly, and professional
+- Upsell related services naturally (e.g. color + treatment)
+- Default contact: +974 1234 5678`,
+    quickEn: ["Book an appointment", "Service prices?", "Hair color options?", "Loyalty program?"],
+    quickAr: ["أريد حجز موعد", "ما هي الأسعار؟", "خيارات صبغ الشعر؟", "برنامج الولاء؟"]
+  },
+
+  travel: {
+    system: `You are a professional AI assistant for Al Rihla Travel Agency, a premium travel agency in Doha, Qatar.
+
+AGENCY INFO:
+- Name: Al Rihla Travel Agency (وكالة الرحلة للسفر)
+- Location: C-Ring Road, Doha, Qatar
+- Phone & WhatsApp: +974 12345678 | Landline: +974 12345678
+- Hours: Saturday–Thursday 8:00 AM – 9:00 PM | Friday 2:00 PM – 8:00 PM
+
+POPULAR PACKAGES (estimates):
+- Turkey (Istanbul) 7 nights: ~3,500–5,500 QAR/person (flights+hotel, no visa for Qatari passport)
+- Egypt (Cairo/Sharm) 7 nights: ~2,800–4,500 QAR/person (visa on arrival)
+- Malaysia (KL) 7 nights: ~4,200–6,000 QAR/person (no visa required)
+- UK (London) 7 nights: ~7,500–12,000 QAR/person (visa required, 7-14 days)
+- Thailand (Bangkok/Phuket) 7 nights: ~4,000–6,500 QAR/person (no visa)
+- Morocco (Marrakech) 7 nights: ~5,000–7,500 QAR/person (no visa for Qatari)
+- Hajj & Umrah packages: from 8,000 QAR/person (seasonal)
+
+VISA INFO:
+- Schengen Europe: 15-20 working days, multiple documents
+- USA: 2-3 months, interview required
+- UK: 7-14 days, biometrics required
+- Most Asian & Arab countries: visa on arrival or not required for Qatar residents
+
+SERVICES: Flights, hotels, full packages, visa processing, travel insurance, airport transfers, group travel, corporate travel, Hajj & Umrah.
+
+BOOKING PROCESS: Ask for destination, dates, number of travelers, budget. Provide estimate. Collect contact info for detailed quote from agent.
+
+RULES:
+- Always reply in the SAME LANGUAGE the customer uses (Arabic or English)
+- Be enthusiastic and helpful — travel is exciting!
+- Give price estimates clearly marked as approximate
+- Always mention visa requirements proactively
+- For contact: always give +974 12345678 for both mobile and landline`,
+    quickEn: ["Package to Turkey?", "Visa requirements?", "Family holiday deals?", "Hajj & Umrah packages?"],
+    quickAr: ["باقة لتركيا؟", "متطلبات الفيزا؟", "عروض العائلات؟", "باقات حج وعمرة؟"]
+  }
+};
+
+let currentSector = 'restaurant';
+let currentLang = 'en';
+let isSending = false;
+
+function selectSector(el, sector) {
+  document.querySelectorAll('.sector-pill').forEach(p => p.classList.remove('active'));
+  el.classList.add('active');
+  currentSector = sector;
+  chatHistory = [];
+  clearChat();
+  showWelcome();
+  updateQuickBtns();
+}
+
+function clearChat() {
+  document.getElementById('chatMessages').innerHTML = '';
+}
+
+function showWelcome() {
+  const ctx = sectorContexts[currentSector];
+  const msgs = {
+    restaurant: { en: "Hello! 👋 Welcome to our restaurant demo. I can help with our menu, reservations, and opening hours. What would you like to know?", ar: "مرحباً! 👋 أهلاً بك في ديمو المطعم. يمكنني مساعدتك بالقائمة والحجوزات وأوقات العمل. بماذا يمكنني مساعدتك؟" },
+    hotel: { en: "Hello! 👋 Welcome to our hotel demo. I can help with room availability, booking, and our amenities. How can I assist you?", ar: "مرحباً! 👋 أهلاً بك في ديمو الفندق. يمكنني مساعدتك بالغرف والحجز والمرافق. كيف يمكنني خدمتك؟" },
+    clinic: { en: "Hello! 👋 Welcome to our clinic demo. I can help you book an appointment or answer questions about our services. How can I help?", ar: "مرحباً! 👋 أهلاً بك في ديمو العيادة. يمكنني مساعدتك في حجز موعد أو الإجابة على أسئلتك. كيف يمكنني مساعدتك؟" },
+    rental: { en: "Hello! 👋 Welcome to our car rental demo. I can help you find the right car, check availability, and book. What do you need?", ar: "مرحباً! 👋 أهلاً بك في ديمو تأجير السيارات. يمكنني مساعدتك في اختيار السيارة المناسبة والحجز. ماذا تحتاج؟" },
+    import: { en: "Hello! 👋 Welcome to our import/export demo. I can help with product availability, prices, and orders. What are you looking for?", ar: "مرحباً! 👋 أهلاً بك في ديمو الاستيراد والتصدير. يمكنني مساعدتك بتوفر المنتجات والأسعار والطلبات. ماذا تبحث عن؟" },
+        travel: { en: "Hello! ✈️ Welcome to Al Rihla Travel Agency! I can help with holiday packages, visa requirements, flights, and Hajj & Umrah. Where would you like to go?", ar: "مرحباً! ✈️ أهلاً بك في وكالة الرحلة للسفر! يمكنني مساعدتك بباقات السفر ومتطلبات الفيزا والحجوزات والحج والعمرة. إلى أين تريد السفر؟" },
+    beauty: { en: "Hello! 💅 Welcome to Nour Beauty Salon demo! I can help with appointments, our services & prices, and special offers. How can I assist you today?", ar: "مرحباً! 💅 أهلاً بك في ديمو صالون نور للتجميل! يمكنني مساعدتك بحجز المواعيد والخدمات والأسعار والعروض الخاصة. كيف يمكنني خدمتك اليوم؟" }
+  };
+  const msg = msgs[currentSector];
+  const text = document.body.classList.contains('arabic') ? msg.ar : msg.en;
+  addMsg(text, 'bot');
+}
+
+function updateQuickBtns() {
+  const ctx = sectorContexts[currentSector];
+  const btns = document.body.classList.contains('arabic') ? ctx.quickAr : ctx.quickEn;
+  const container = document.getElementById('quickBtns');
+  container.innerHTML = btns.map(b => `<button class="quick-btn" onclick="sendQuick('${b}')">${b}</button>`).join('');
+}
+
+function addMsg(text, type) {
+  const msgs = document.getElementById('chatMessages');
+  const isRTL = /[\u0600-\u06FF]/.test(text);
+  const div = document.createElement('div');
+  div.className = `msg ${type}`;
+  const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  div.innerHTML = `<div class="msg-bubble" dir="${isRTL ? 'rtl' : 'ltr'}">${text}</div><div class="msg-time">${time}</div>`;
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function showTyping() {
+  const msgs = document.getElementById('chatMessages');
+  const div = document.createElement('div');
+  div.className = 'msg bot';
+  div.id = 'typing';
+  div.innerHTML = '<div class="typing-indicator"><span></span><span></span><span></span></div>';
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function removeTyping() {
+  const t = document.getElementById('typing');
+  if (t) t.remove();
+}
+
+function sendQuick(text) {
+  document.getElementById('chatInput').value = text;
+  sendChat();
+}
+
+let chatHistory = [];
+
+async function sendChat() {
+  if (isSending) return;
+  const input = document.getElementById('chatInput');
+  const msg = input.value.trim();
+  if (!msg) return;
+
+  document.getElementById('quickBtns').innerHTML = '';
+  addMsg(msg, 'user');
+  input.value = '';
+  input.style.height = 'auto';
+  isSending = true;
+  document.getElementById('sendBtn').disabled = true;
+  showTyping();
+
+  const ctx = sectorContexts[currentSector];
+  chatHistory.push({ role: 'user', content: msg });
+
+  try {
+    const res = await fetch(GROQ_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + GROQ_KEY
+      },
+      body: JSON.stringify({
+        model: 'llama-3.3-70b-versatile',
+        max_tokens: 500,
+        temperature: 0.7,
+        messages: [
+          { role: 'system', content: ctx.system },
+          ...chatHistory.slice(-6)
+        ]
+      })
+    });
+
+    const data = await res.json();
+    removeTyping();
+    const reply = data.choices?.[0]?.message?.content || "I'm sorry, I couldn't process that. Please try again.";
+    chatHistory.push({ role: 'assistant', content: reply });
+    addMsg(reply, 'bot');
+  } catch (e) {
+    removeTyping();
+    chatHistory.pop();
+    addMsg("I am having trouble connecting right now. Please try again in a moment.", 'bot');
+  }
+
+  isSending = false;
+  document.getElementById('sendBtn').disabled = false;
+  input.focus();
+}
+
+document.getElementById('chatInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendChat(); }
+});
+
+document.getElementById('chatInput').addEventListener('input', function() {
+  this.style.height = 'auto';
+  this.style.height = Math.min(this.scrollHeight, 80) + 'px';
+});
+
+// Init
+showWelcome();
+updateQuickBtns();
+</script>
+
+</body>
+</html>
